@@ -9,6 +9,46 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div class="main-page-wrapper">
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <img src="img/logo.svg" width="52" height="52" alt="Smart Device Logo">
+        <div class="logo__wrapper">
+          <h2 class="logo__title">Smart Device</h2>
+          <p class="logo__slogan">Умные технологии</p>
+        </div>
+      </a>
+      <button class="page-header__button page-header__button--menu-closed" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+      <nav class="main-nav main-nav--closed">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"></li>
+          <li class="site-list__item"></li>
+          <li class="site-list__item"></li>
+          <li class="site-list__item"></li>
+        </ul>
+      </nav>
+      <ul class="page-header__contacts-list">
+        <li class="page-header__contacts-item page-header__contacts-item--mail">
+          <a href="mailto:info@sd.ru" class="page-header__contacts-link page-header__contacts-link--mail"><span>info@sd.ru</span></a>
+        </li>
+        <li class="page-header__contacts-item page-header__contacts-item--phone">
+          <a href="tel:+74950005252" class="page-header__contacts-link page-header__contacts-link--phone"><span>+7 (495) 000 52 52</span></a>
+        </li>
+      </ul>
+      <button class="page-header__button button button--transparent" type="button">Заказать звонок</button>
+    </header>
+
+    <div class="banner">
+      <div class="banner__column">
+        <h1>Печатные платы</h1>
+        <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="banner__link anchor-link" href="#">Получить бесплатную консультацию</a>
+        <a class="banner__link anchor-link anchor-link--scroll-down" href="#">Скролл вниз</a>
+      </div>
+      <div class="banner__column">
+        <img src="img/motherboard.png" width="705" height="515" alt="Печатные платы">
+      </div>
+    </div>
+  </div>
 </body>
 </html>

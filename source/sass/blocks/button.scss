@@ -1,0 +1,24 @@
+.button {
+  min-width: 180px;
+  margin: 0;
+  padding: 13px 22px;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+  font-family: $alternate-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: inherit;
+  background-color: transparent;
+
+  vertical-align: middle;
+  text-align: center;
+  align-self: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

@@ -1,0 +1,32 @@
+.logo {
+  min-width: 202px;
+  display: flex;
+  margin-right: 6%;
+
+  img {
+    display: block;
+    margin-right: 16px;
+  }
+
+  &__wrapper {
+    min-width: 135px;
+  }
+
+  h2 {
+    @include indents-reset;
+    margin-top: 7px;
+    font-family: $alternate-font;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  p {
+    @include indents-reset;
+    font-family: $logo-slogan-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: $logo-slogan-font-color;
+  }
+}

@@ -1,0 +1,7 @@
+.main-nav {
+  @include ul-reset;
+
+  &--closed {
+    display: none;
+  }
+}
