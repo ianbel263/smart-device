@@ -1,8 +1,13 @@
 .page-header {
   max-width: 1411px;
-  width: 73%;
+  width: 73.5%;
   margin: 0 auto;
   display: flex;
+
+  &__logo {
+    margin-right: 6%;
+    min-width: 202px;
+  }
 
   &__button--menu-closed {
     display: none;
@@ -10,10 +15,10 @@
 
   &__contacts-list {
     @include ul-reset;
-    width: 32%;
+    width: 30.7%;
     min-width: 360px;
     margin-left: auto;
-    margin-right: 2%;
+    margin-right: 2.4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,15 +70,21 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
-    min-width: 750px;
+    width: 93.3%;
+    min-width: 700px;
 
     &__contacts-list {
-      min-width: 83px;
-      width: 11%;
+      margin-right: 0;
+      min-width: 84px;
+      width: 12%;
     }
 
     &__contacts-item {
-      min-width: auto;
+      min-width: 25px;
+
+      &--mail {
+        margin-right: 33px;
+      }
     }
 
     &__contacts-link {
@@ -92,7 +103,22 @@
 
 @media (max-width: $mobile-width) {
   .page-header {
-    min-width: 320px;
-    padding: 10px 0;
+    width: 90%;
+    min-width: 290px;
+
+    &__logo {
+      margin-right: 0;
+      min-width: 52px;
+    }
+
+    &__contacts-list {
+      min-width: 74px;
+    }
+
+    &__contacts-item {
+      &--mail {
+        margin-right: 23px;
+      }
+    }
   }
 }

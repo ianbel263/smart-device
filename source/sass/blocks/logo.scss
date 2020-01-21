@@ -1,7 +1,5 @@
 .logo {
-  min-width: 202px;
   display: flex;
-  margin-right: 6%;
 
   img {
     display: block;
@@ -28,5 +26,13 @@
     font-size: 12px;
     line-height: 14px;
     color: $logo-slogan-font-color;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .logo {
+    &__wrapper {
+      display: none;
+    }
   }
 }
