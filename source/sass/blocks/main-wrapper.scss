@@ -1,0 +1,13 @@
+.main-wrapper {
+  padding: 107px 0;
+  background-color: $main-bg-color;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-middle.svg");
+}
+
+@media (max-width: $tablet-width) {
+  .main-wrapper {
+    padding: 54px 0 83px;
+  }
+}

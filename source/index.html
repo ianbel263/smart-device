@@ -6,35 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Smart Device - производство и монтаж, поставка комплектующих, блоков и модулей">
   <title>Smart-Device</title>
-
-<!-- ПЕРЕД СДАЧЕЙ ПРОЕКТА УБРАТЬ -->
-<!-- Pixel Glass -->
-<style>
-  HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* По умолчанию мобильный макет */
-    background-image: url( "pixel-glass/design/Smart Device 1920.jpg" );
-  }
-  @media ( max-width: 1023px ) {
-    HTML {
-      background-image: url( "pixel-glass/design/Smart Device 750.jpg" );
-    }
-  }
-  @media ( max-width: 767px ) {
-    HTML {
-      background-image: url( "pixel-glass/design/Smart Device 320.jpg" );
-    }
-  }
-
-  BODY {
-    opacity: .5;
-  }
-</style>
-<link rel="stylesheet" href="pixel-glass/pixel-glass.css">
-<script src="pixel-glass/pixel-glass.js"></script>
-<!-- // Pixel Glass -->
-
   <link rel="preload" href="fonts/pt-mono-v7-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v18-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
@@ -42,6 +13,9 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
   <div class="main-page-wrapper">
     <header class="page-header">
       <a class="page-header__logo logo">
@@ -83,5 +57,45 @@
           <a class="banner__link anchor-link anchor-link--scroll-down" href="#">Скролл вниз</a></div>
     </div>
   </div>
+  <main>
+    <div class="main-wrapper">
+      <section class="features">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <svg class="features__icon" width="29" height="35">
+              <use xlink:href="#icon-watch"></use>
+            </svg>
+            <h3>Оперативные сроки</h3>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="features__item">
+            <svg class="features__icon" width="35" height="35">
+              <use xlink:href="#icon-hired"></use>
+            </svg>
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+          </li>
+          <li class="features__item">
+            <svg class="features__icon" width="36" height="31">
+              <use xlink:href="#icon-detective"></use>
+            </svg>
+            <h3>Полная конфиденциальность</h3>
+            <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li class="features__item">
+            <svg class="features__icon" width="35" height="35">
+              <use xlink:href="#icon-tag"></use>
+            </svg>
+            <h3>Персонализация стоимости</h3>
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+
+      </section>
+    </div>
+  </main>
 </body>
 </html>
