@@ -1,5 +1,5 @@
 .main-wrapper {
-  padding: 107px 0;
+  padding: 110px 0;
   background-color: $main-bg-color;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -9,5 +9,11 @@
 @media (max-width: $tablet-width) {
   .main-wrapper {
     padding: 54px 0 83px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-wrapper {
+    padding-top: 40px;
   }
 }

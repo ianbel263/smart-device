@@ -1,5 +1,7 @@
 .logo {
   display: flex;
+  width: 52px;
+  height: 52px;
 
   img {
     display: block;
@@ -31,6 +33,9 @@
 
 @media (max-width: $mobile-width) {
   .logo {
+    width: 38px;
+    height: 38px;
+
     &__wrapper {
       display: none;
     }

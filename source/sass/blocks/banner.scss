@@ -108,10 +108,10 @@
   .banner {
     width: 100%;
     padding: 0 15px;
-    padding-top: 215px;
+    padding-top: 227px;
 
     h1 {
-      width: 100%;
+      max-width: 270px;
       font-size: 40px;
       line-height: 47px;
     }
@@ -120,7 +120,7 @@
       // width: 100%;
       width: 280px;
       // margin: 0 auto;
-      margin-bottom: 42px;
+      margin-bottom: 44px;
       font-size: 16px;
     }
 
