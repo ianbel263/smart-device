@@ -3,6 +3,7 @@
   width: 73.5%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
 
   &__logo {
     margin-right: 8.4%;
@@ -18,7 +19,7 @@
     width: 30.7%;
     min-width: 360px;
     margin-left: auto;
-    margin-right: 2.4%;
+    margin-right: 3.4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,21 +48,27 @@
       position: absolute;
       top: 50%;
       left: 0;
-      width: 20px;
-      height: 20px;
+      // width: 20px;
+      // height: 20px;
       transform: translateY(-50%);
       background-repeat: no-repeat;
       background-position: center center;
+      background-size: contain;
     }
 
     &--mail {
       &::before {
+        width: 19px;
+        height: 14px;
         background-image: url("../img/icon-mail.svg");
       }
     }
 
     &--phone {
       &::before {
+        width: 18px;
+        height: 18px;
+        left: 4px;
         background-image: url("../img/icon-phone.svg");
       }
     }
@@ -78,17 +85,17 @@
     }
 
     &__contacts-list {
-      margin-left: 37px;
+      margin-left: 15px;
       margin-right: 0;
       min-width: 84px;
-      width: 12%;
+      width: 10%;
     }
 
     &__contacts-item {
       min-width: 25px;
 
       &--mail {
-        margin-right: 33px;
+        margin-right: 25px;
       }
     }
 
@@ -97,6 +104,16 @@
 
       span {
         display: none;
+      }
+
+      &--mail::before {
+        width: 25px;
+        height: 19px;
+      }
+
+      &--phone::before {
+        width: 24px;
+        height: 24px;
       }
     }
 
@@ -110,6 +127,7 @@
   .page-header {
     width: 90%;
     min-width: 290px;
+    align-items: flex-start;
 
     &__logo {
       margin-right: 0;
@@ -117,8 +135,9 @@
     }
 
     &__contacts-list {
-      margin-left: 27px;
+      margin-left: 7px;
       min-width: 74px;
+      // align-items: flex-start;
     }
 
     &__contacts-item {

@@ -5,3 +5,9 @@
   background-image: url("../img/bg-header.png");
   background-position: center center;
 }
+
+@media (max-width: $tablet-width) {
+  .main-page-wrapper {
+    padding-top: 20px;
+  }
+}
