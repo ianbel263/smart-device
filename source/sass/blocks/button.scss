@@ -53,8 +53,13 @@
   &--blue {
     padding: 15px 46px;
 
-    border-color: $form-bg-color;
-    background-color: $form-bg-color;
+    border-color: $features-title-font-color;
+    background-color: $features-title-font-color;
+  }
+
+  &--details {
+    color: $features-title-font-color;
+    border-color: $features-title-font-color;
   }
 }
 

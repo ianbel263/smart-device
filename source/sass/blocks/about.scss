@@ -1,0 +1,39 @@
+.about {
+  position: relative;
+  width: 90%;
+  max-width: 1170px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 180px;
+
+  h2 {
+    @include indents-reset;
+    margin-bottom: 18px;
+    font-family: $alternate-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  p {
+    @include indents-reset;
+    margin-bottom: 40px;
+    max-width: 985px;
+  }
+
+  &__foundation-year {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    transform: rotate(-90deg);
+
+    p {
+      @include indents-reset;
+      font-family: $alternate-font;
+      font-weight: 700;
+      font-size: 156px;
+      line-height: 220px;
+      display: flex;
+    }
+  }
+}
