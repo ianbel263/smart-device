@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Smart Device - производство и монтаж, поставка комплектующих, блоков и модулей">
   <title>Smart-Device</title>
+
+<!-- ПЕРЕД СДАЧЕЙ ПРОЕКТА УБРАТЬ -->
+<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "pixel-glass/design/Smart Device 1920.jpg" );
+  }
+  @media ( max-width: 1023px ) {
+    HTML {
+      background-image: url( "pixel-glass/design/Smart Device 750.jpg" );
+    }
+  }
+  @media ( max-width: 767px ) {
+    HTML {
+      background-image: url( "pixel-glass/design/Smart Device 320.jpg" );
+    }
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="pixel-glass/pixel-glass.css">
+<script src="pixel-glass/pixel-glass.js"></script>
+<!-- // Pixel Glass -->
+
   <link rel="preload" href="fonts/pt-mono-v7-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v18-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
