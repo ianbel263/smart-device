@@ -1,0 +1,138 @@
+.banner {
+  position: relative;
+  width: 77.6%;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding-top: 230px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    @include indents-reset;
+    width: 59%;
+    margin-bottom: 27px;
+    font-family: $alternate-font;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  p {
+    @include indents-reset;
+    box-sizing: border-box;
+    width: 65%;
+    max-width: 750px;
+    padding-left: 95px;
+    margin-bottom: 45px;
+    position: relative;
+    font-size: 22px;
+    line-height: 34px;
+    text-transform: lowercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 66px;
+      height: 2px;
+      left: 2px;
+      top: 16px;
+      background-color: $main-bg-color;
+    }
+  }
+
+  &__link {
+    color: $alternate-font-color;
+  }
+
+  &__link--consult {
+    font-size: 16px;
+    line-height: 19px;
+    align-self: start;
+    margin-left: 95px;
+  }
+
+  &__link-wrapper {
+    width: 100px;
+    position: absolute;
+    left: -40px;
+    bottom: -150px;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+  }
+
+  &__link-text--mobile {
+    display: none;
+  }
+
+  .anchor-link--scroll-down {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .banner {
+    padding-top: 15.5%;
+
+    h1 {
+      font-size: 60px;
+      line-height: 70px;
+      margin-bottom: 27px;
+    }
+
+    p {
+      padding-left: 50px;
+      margin-bottom: 55px;
+      font-size: 18px;
+      line-height: 156.8%;
+
+      &::before {
+        width: 33px;
+      }
+    }
+
+    &__link--consult {
+      margin-left: 50px;
+    }
+
+    .anchor-link--scroll-down {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .banner {
+    width: 100%;
+    padding: 0 15px;
+    padding-top: 215px;
+
+    h1 {
+      width: 100%;
+      font-size: 40px;
+      line-height: 47px;
+    }
+
+    p {
+      // width: 100%;
+      width: 280px;
+      // margin: 0 auto;
+      margin-bottom: 42px;
+      font-size: 16px;
+    }
+
+    &__link--consult {
+      margin: 0;
+    }
+
+    &__link-text {
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
+    }
+  }
+}

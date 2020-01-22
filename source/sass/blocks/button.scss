@@ -49,4 +49,19 @@
       bottom: 0px;
     }
   }
+
+  &--blue {
+    padding: 15px 46px;
+
+    border-color: $form-bg-color;
+    background-color: $form-bg-color;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .button {
+    &--blue {
+      padding: 15px 31px;
+    }
+  }
 }
