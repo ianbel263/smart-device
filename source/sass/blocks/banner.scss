@@ -3,7 +3,8 @@
   width: 77.6%;
   max-width: 1420px;
   margin: 0 auto;
-  padding-top: 230px;
+  padding-top: 197px;
+  padding-bottom: 279px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -57,8 +58,8 @@
   &__link-wrapper {
     width: 100px;
     position: absolute;
-    left: -40px;
-    bottom: -150px;
+    left: -35px;
+    bottom: 130px;
     opacity: 0.5;
     transform: rotate(-90deg);
   }
@@ -75,7 +76,8 @@
 
 @media (max-width: $tablet-width) {
   .banner {
-    padding-top: 15.5%;
+    padding-top: 85px;
+    padding-bottom: 168px;
 
     h1 {
       font-size: 60px;
@@ -108,7 +110,8 @@
   .banner {
     width: 100%;
     padding: 0 15px;
-    padding-top: 227px;
+    padding-top: 200px;
+    padding-bottom: 70px;
 
     h1 {
       max-width: 270px;

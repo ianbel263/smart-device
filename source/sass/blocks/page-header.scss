@@ -2,6 +2,8 @@
   max-width: 1411px;
   width: 73.5%;
   margin: 0 auto;
+  padding-top: 33px;
+  padding-bottom: 33px;
   display: flex;
   align-items: center;
 
@@ -78,6 +80,7 @@
   .page-header {
     width: 93.3%;
     min-width: 700px;
+    padding-top: 20px;
 
     &__main-nav {
       margin-left: auto;
@@ -126,6 +129,7 @@
   .page-header {
     width: 90%;
     min-width: 290px;
+    padding-top: 17px;
     align-items: flex-start;
 
     &__logo {

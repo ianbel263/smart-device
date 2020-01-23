@@ -4,7 +4,8 @@
   max-width: 1170px;
   box-sizing: border-box;
   margin: 0 auto;
-  // display: flex;
+  padding-top: 38px;
+  padding-bottom: 83px;
 
   &__info {
     padding-left: 180px;
@@ -22,26 +23,34 @@
       @include indents-reset;
       margin-bottom: 22px;
       max-width: 985px;
-    }
-  }
 
-  &__button {
-    margin-top: 15px;
+      &:last-of-type {
+        margin-bottom: 40px;
+      }
+    }
   }
 
   &__foundation-year {
     position: absolute;
     left: -100px;
-    top: 52px;
+    top: 90px;
 
     p {
       @include indents-reset;
-      transform: rotate(-90deg);
       font-family: $alternate-font;
       font-weight: 700;
       font-size: 156px;
       line-height: 220px;
       display: flex;
+      transform: rotate(-90deg);
+
+      // color: transparent;
+      // // background-color: #fff;
+      // background-repeat: no-repeat;
+      // background-position: center center;
+      // background-size: 100%;
+      // background-image: url("../img/bg-year.png");
+      // background-clip: text;
     }
   }
 }
@@ -51,6 +60,7 @@
     width: 100%;
     margin: 0;
     padding: 0 25px;
+    padding-top: 14px;
 
     &__info {
       padding-left: 185px;
@@ -68,17 +78,14 @@
           overflow: hidden;
           text-overflow: ellipsis;
           height: 87px;
+          // margin-bottom: 40px;
         }
       }
     }
 
-    &__button {
-      margin-top: 22px;
-    }
-
     &__foundation-year {
       left: -82px;
-      top: 55px;
+      top: 65px;
 
       p {
         overflow: visible;
@@ -92,6 +99,7 @@
 @media (max-width: $mobile-width) {
   .about {
     padding: 0 15px;
+    padding-top: 8px;
 
     &__info {
       padding: 0;
@@ -106,13 +114,9 @@
 
         &:last-of-type {
           height: 180px;
-          margin: 0;
+          margin-bottom: 25px;
         }
       }
-    }
-
-    &__button {
-      margin-top: 25px;
     }
 
     &__foundation-year {
