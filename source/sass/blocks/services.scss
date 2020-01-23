@@ -1,5 +1,5 @@
 .services {
-  padding: 90px 0 125px;
+  padding: 90px 0 100px;
   color: $alternate-font-color;
   background-color: $alternate-bg-color;
 
@@ -79,6 +79,7 @@
   .services {
     padding: 0 25px;
     padding-top: 50px;
+    padding-bottom: 80px;
 
     h2 {
       width: 85%;
@@ -95,6 +96,10 @@
       .services__item {
         margin-right: 0;
         margin-bottom: 45px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -119,6 +124,7 @@
   .services {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 64px;
 
     h2 {
       width: 100%;
