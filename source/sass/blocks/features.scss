@@ -47,9 +47,9 @@
         color: $alternate-font-color;
       }
 
-      // .features__icon path {
-      //   fill: $alternate-font-color;
-      // }
+      .features__icon {
+        fill: $main-bg-color;
+      }
     }
   }
 
@@ -70,8 +70,9 @@
 
   &__icon {
     margin-bottom: 15px;
-  }
 
+    fill: $features-title-font-color;
+  }
 }
 
 @media (max-width: $tablet-width) {

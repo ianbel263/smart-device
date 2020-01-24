@@ -12,5 +12,14 @@
     a {
       color: inherit;
     }
+
+    &:hover:not(.item--active),
+    &:focus:not(.item--active) {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }

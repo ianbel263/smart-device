@@ -9,7 +9,7 @@
 
   &__logo {
     margin-right: 8.4%;
-    min-width: 202px;
+    // min-width: 202px;
   }
 
   &__main-nav {
@@ -140,6 +140,7 @@
     align-items: flex-start;
 
     &__logo {
+      width: 38px;
       margin-right: 0;
 
       img {
