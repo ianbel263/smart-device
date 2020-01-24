@@ -4,7 +4,7 @@
   max-width: 1170px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 38px;
+  padding-top: 35px;
   padding-bottom: 110px;
 
   &__info {
@@ -21,7 +21,7 @@
 
     p {
       @include indents-reset;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
       max-width: 985px;
 
       &:last-of-type {
@@ -32,8 +32,8 @@
 
   &__foundation-year {
     position: absolute;
-    left: -100px;
-    top: 90px;
+    left: -90px;
+    top: 87px;
 
     p {
       @include indents-reset;
@@ -98,7 +98,7 @@
 @media (max-width: $mobile-width) {
   .about {
     padding: 0 15px;
-    padding-top: 8px;
+    padding-top: 25px;
     padding-bottom: 65px;
 
     &__info {

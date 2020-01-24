@@ -1,10 +1,10 @@
 .banner {
   position: relative;
-  width: 77.6%;
+  width: 94%;
   max-width: 1420px;
   margin: 0 auto;
   padding-top: 197px;
-  padding-bottom: 279px;
+  padding-bottom: 275px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -12,7 +12,7 @@
   h1 {
     @include indents-reset;
     width: 59%;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     font-family: $alternate-font;
     font-weight: 700;
     font-size: 80px;
@@ -24,7 +24,7 @@
   p {
     @include indents-reset;
     box-sizing: border-box;
-    width: 65%;
+    width: 66%;
     max-width: 750px;
     padding-left: 95px;
     margin-bottom: 45px;
@@ -85,6 +85,7 @@
 
 @media (max-width: $tablet-width) {
   .banner {
+    width: 77%;
     padding-top: 85px;
     padding-bottom: 168px;
 

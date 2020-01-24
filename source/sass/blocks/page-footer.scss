@@ -2,10 +2,11 @@
   padding-top: 65px;
   display: flex;
   flex-direction: column;
+  color: $footer-font-color;
 
   &__wrapper {
     width: 94%;
-    max-width: 1420px;
+    max-width: 1405px;
     margin: 0 auto;
     padding-bottom: 45px;
     display: flex;
@@ -26,7 +27,7 @@
 
     &--bottom {
       width: 94%;
-      max-width: 1420px;
+      max-width: 1405px;
       margin: 0 auto;
     }
   }
@@ -41,6 +42,10 @@
 
   &__logo {
     margin-bottom: 53px;
+
+    h2 {
+      color: $logo-name-footer-font-color;
+    }
   }
 
   &__social {
@@ -50,19 +55,16 @@
   &__middle {
     width: 70%;
     margin-left: auto;
-    // display: flex;
-    // justify-content: space-between;
   }
 
   &__main-nav,
   &__contacts {
     font-size: 15px;
     line-height: 25px;
-    letter-spacing: 0.03em;
 
     h2 {
       @include indents-reset;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
       font-family: $alternate-font;
       font-weight: 400;
       font-size: 15px;
@@ -73,6 +75,8 @@
   }
 
   &__main-nav {
+    letter-spacing: 0.03em;
+
     .site-menu__list {
       column-count: 2;
       column-gap: 65px;
@@ -82,6 +86,7 @@
 
   &__contacts {
     margin-left: auto;
+    margin-right: 10px;
 
     address {
       font-style: normal;
@@ -90,12 +95,7 @@
   }
 
   &__bottom {
-    // width: 100%;
-    // width: 94%;
-    // max-width: 1420px;
-    // margin: 0 auto;
-    padding: 14px 0;
-    // display: flex;
+    padding: 10px 0;
 
     font-size: 13px;
     line-height: 24px;
@@ -151,15 +151,15 @@
       padding: 0 25px;
 
       &--top {
-        padding-top: 19px;
-        padding-bottom: 19px;
+        padding-top: 20px;
+        padding-bottom: 25px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
       }
 
       &--middle {
-        padding-top: 35px;
+        padding-top: 40px;
         padding-bottom: 35px;
       }
     }
@@ -171,6 +171,8 @@
       border-bottom: 1px solid $footer-border-color;
 
       .page-footer__copyright {
+        padding-top: 5px;
+        padding-left: 5px;
         display: block;
         font-size: 13px;
         line-height: 24px;
@@ -198,6 +200,8 @@
     &__bottom {
       width: 100%;
       margin: 0;
+      padding-top: 21px;
+      padding-bottom: 24px;
       max-width: none;
     }
 
@@ -255,7 +259,7 @@
       padding-right: 20px;
 
       box-sizing: border-box;
-      border-bottom: 1px solid $footer-border-color;
+      // border-bottom: 1px solid $footer-border-color;
     }
 
     &__toggle {
@@ -289,7 +293,20 @@
     }
 
     &__contacts {
+      position: relative;
       margin-left: 0;
+      margin-right: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 120%;
+        height: 1px;
+        transform: translateX(-10%);
+        overflow: hidden;
+        background-color: $footer-border-color;
+      }
     }
 
     &__confidentiality {
