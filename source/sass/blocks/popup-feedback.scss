@@ -27,7 +27,7 @@
       transform: rotate(-45deg);
     }
 
-    &:after {
+    &::after {
       transform: rotate(45deg);
     }
   }
@@ -72,7 +72,7 @@
         left: 0;
       }
 
-      &:after {
+      &::after {
         top: 11px;
         left: 5px;
       }

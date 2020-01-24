@@ -117,18 +117,7 @@
   &__confidentiality,
   &__developer {
     color: inherit;
-  }
 
-  &__confidentiality {
-    margin-right: auto;
-  }
-
-  &__toggle {
-    display: none;
-  }
-
-  &__confidentiality,
-  &__developer {
     &:hover,
     &:focus {
       opacity: 0.7;
@@ -137,6 +126,14 @@
     &:active {
       opacity: 1;
     }
+  }
+
+  &__confidentiality {
+    margin-right: auto;
+  }
+
+  &__toggle {
+    display: none;
   }
 }
 
@@ -219,6 +216,7 @@
     h2 {
       margin-bottom: 0;
     }
+
     &__logo .logo__wrapper {
       display: block;
     }
