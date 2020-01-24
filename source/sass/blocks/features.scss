@@ -1,9 +1,7 @@
 .features {
   padding: 0 25px;
   padding-top: 110px;
-  // margin-bottom: 75px;
   padding-bottom: 37px;
-  // display: flex;
 
   &__list {
     @include ul-reset;
@@ -39,10 +37,20 @@
     background-color: $main-bg-color;
 
     flex-shrink: 1;
-  }
 
-  &__icon {
-    margin-bottom: 15px;
+    &:hover {
+      color: $alternate-font-color;
+      border-color: $features-title-font-color;
+      background-color: $features-title-font-color;
+
+      h3 {
+        color: $alternate-font-color;
+      }
+
+      // .features__icon path {
+      //   fill: $alternate-font-color;
+      // }
+    }
   }
 
   h3 {
@@ -59,6 +67,11 @@
     font-size: 16px;
     line-height: 22px;
   }
+
+  &__icon {
+    margin-bottom: 15px;
+  }
+
 }
 
 @media (max-width: $tablet-width) {

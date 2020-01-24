@@ -55,6 +55,10 @@
       height: 620px;
       opacity: 0.2;
     }
+  }
+
+  &__link {
+    color: inherit;
 
     &::after {
       content: "";
@@ -68,10 +72,15 @@
       background-color: $form-bg-color;
       background-image: url("../img/bg-icon-arrow.svg");
     }
-  }
 
-  &__link {
-    color: inherit;
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }
 
