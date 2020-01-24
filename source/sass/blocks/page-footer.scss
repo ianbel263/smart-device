@@ -75,6 +75,7 @@
   }
 
   &__main-nav {
+    margin-right: 40px;
     letter-spacing: 0.03em;
 
     .site-menu__list {
@@ -85,6 +86,7 @@
   }
 
   &__contacts {
+    min-width: 340px;
     margin-left: auto;
     margin-right: 10px;
 
@@ -191,10 +193,16 @@
     }
 
     &__main-nav {
+      margin-right: 0;
+
       .site-menu__list {
         column-count: 1;
         column-gap: auto;
       }
+    }
+
+    &__contacts {
+      min-width: 0;
     }
 
     &__bottom {
