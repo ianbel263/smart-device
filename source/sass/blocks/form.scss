@@ -1,0 +1,109 @@
+.form {
+  color: $alternate-font-color;
+  background-color: $form-bg-color;
+
+  h2 {
+    @include indents-reset;
+
+    font-family: $alternate-font;
+    font-weight: 400;
+  }
+
+  p {
+    @include indents-reset;
+  }
+
+  &__fields-list {
+    @include ul-reset;
+  }
+
+  &__fields-item--checkbox {
+    position: relative;
+    padding-left: 50px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  form {
+    fieldset {
+      @include indents-reset;
+      border: none;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 12px 16px;
+      box-sizing: border-box;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: $form-input-bg-color;
+
+      &::placeholder {
+        color: inherit;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:focus {
+        opacity: 1;
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="checkbox"] + label {
+      width: 100%;
+      font-size: 14px;
+      line-height: 16px;
+      color: $form-label-font-color;
+      opacity: 0.8;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        box-sizing: border-box;
+      }
+
+      &::before {
+        width: 16px;
+        height: 16px;
+        top: 7px;
+        left: 15px;
+        border: 1px solid $main-bg-color;
+      }
+
+      &::after {
+        display: none;
+        width: 8px;
+        height: 5px;
+        top: 13px;
+        left: 19px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("../img/bg-icon-check.svg");
+      }
+    }
+
+    input[type="checkbox"] {
+      &:checked + label {
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+}

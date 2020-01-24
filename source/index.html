@@ -129,30 +129,30 @@
           </li>
         </ul>
       </section>
-      <section class="feedback">
-        <div class="feedback__wrapper">
+      <section class="feedback form">
+        <div class="feedback__wrapper form__wrapper">
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form action="" method="post">
             <fieldset>
-              <ul class="feedback__fields-list">
-                <li class="feedback__fields-item">
+              <ul class="feedback__fields-list form__fields-list">
+                <li class="feedback__fields-item form__fields-item">
                   <input type="text" name="name" placeholder="Имя">
                 </li>
-                <li class="feedback__fields-item">
+                <li class="feedback__fields-item form__fields-item">
                   <input type="text" name="phone-number" placeholder="Телефон">
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <textarea name="question" id="question" rows="6">Ваш вопрос</textarea>
+              <textarea name="question" rows="6">Ваш вопрос</textarea>
             </fieldset>
             <fieldset>
-              <ul class="feedback__fields-list">
-                <li class="feedback__fields-item">
+              <ul class="feedback__fields-list form__fields-list">
+                <li class="feedback__fields-item form__fields-item">
                   <button class="feedback__button button" type="submit">Задать вопрос</button>
                 </li>
-                <li class="feedback__fields-item feedback__fields-item--checkbox">
+                <li class="feedback__fields-item feedback__fields-item--checkbox form__fields-item form__fields-item--checkbox">
                   <input class="visually-hidden" type="checkbox" name="agree" id="agree" checked>
                   <label for="agree">Я согласен на обработку персональных данных</label>
                 </li>
@@ -213,7 +213,7 @@
           <div class="page-footer__container page-footer__container--middle">
             <nav class="page-footer__main-nav site-menu">
               <h2>Разделы сайта</h2>
-              <button class="page-footer__toggle page-footer__toggle--closed" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
+              <button class="page-footer__toggle page-footer__toggle--closed toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
               <ul class="site-menu__list site-menu__list--nojs">
                 <li class="site-menu__item">
                   <a href="#">О компании</a>
@@ -240,7 +240,7 @@
             </nav>
             <div class="page-footer__contacts">
               <h2>Наш офис</h2>
-              <button class="page-footer__toggle page-footer__toggle--closed" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
+              <button class="page-footer__toggle page-footer__toggle--closed toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
               <div class="page-footer__address page-footer__address--closed">
                 <address>
                   г. Мытищи, Олимпийский проспект, д.10<br>+7 (495) 589-40-50<br>+7 (925) 003-87-67<br>+7 (926) 926-80-79
@@ -261,5 +261,32 @@
         </div>
         </div>
     </footer>
+    <div class="overlay">
+      <section class="popup-feedback form">
+        <button class="popup-feedback__toggle toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="" method="post">
+          <ul class="popup-feedback__fields-list form__fields-list">
+            <li class="popup-feedback__fields-item form__fields-item">
+              <input type="text" name="name" placeholder="Имя">
+            </li>
+            <li class="popup-feedback__fields-item form__fields-item">
+              <input type="text" name="phone-number" placeholder="Телефон">
+            </li>
+            <li class="popup-feedback__fields-item form__fields-item">
+              <textarea name="question" rows="6">Ваш вопрос</textarea>
+            </li>
+            <li class="popup-feedback__fields-item form__fields-item">
+              <button class="popup-feedback__button button" type="submit">Отправить</button>
+            </li>
+            <li class="popup-feedback__fields-item popup-feedback__fields-item--checkbox form__fields-item form__fields-item--checkbox">
+              <input class="visually-hidden" type="checkbox" name="agree" id="agree-popup" checked>
+              <label for="agree-popup">Я согласен на обработку персональных данных</label>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </div>
   </body>
 </html>

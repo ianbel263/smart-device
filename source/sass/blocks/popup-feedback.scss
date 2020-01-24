@@ -1,0 +1,87 @@
+.popup-feedback {
+  position: fixed;
+  top: 136px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+
+  width: 490px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+
+  color: $alternate-font-color;
+  background-color: $form-bg-color;
+
+  z-index: 50;
+
+  &--show {
+    display: block;
+  }
+
+  &__toggle {
+    top: 20px;
+    right: 20px;
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 140.6%;
+
+    margin-bottom: 13px;
+  }
+
+  p {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  &__fields-item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  form {
+    input[type="text"],
+    textarea {
+      padding: 14px 22px;
+    }
+
+    textarea {
+      height: 105px;
+    }
+
+    input[type="checkbox"] + label {
+      &::before {
+        top: 5px;
+        left: 0;
+      }
+
+      &:after {
+        top: 11px;
+        left: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .popup-feedback {
+    width: 63%;
+  }
+}

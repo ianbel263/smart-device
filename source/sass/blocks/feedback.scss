@@ -3,8 +3,8 @@
   padding-top: 90px;
   padding-bottom: 115px;
   display: flex;
-  color: $alternate-font-color;
-  background-color: $form-bg-color;
+  // color: $alternate-font-color;
+  // background-color: $form-bg-color;
 
   background-repeat: no-repeat;
   background-position: calc(70% + 510px) -20px;
@@ -34,8 +34,8 @@
   h2 {
     @include indents-reset;
     margin-bottom: 7px;
-    font-family: $alternate-font;
-    font-weight: 400;
+    // font-family: $alternate-font;
+    // font-weight: 400;
     font-size: 36px;
     line-height: 51px;
   }
@@ -46,7 +46,6 @@
   }
 
   &__fields-list {
-    @include ul-reset;
     display: flex;
     justify-content: space-between;
   }
@@ -55,10 +54,10 @@
     width: 270px;
     box-sizing: border-box;
 
-    &--checkbox {
-      position: relative;
-      padding-left: 50px;
-    }
+    // &--checkbox {
+    //   position: relative;
+    //   padding-left: 50px;
+    // }
   }
 
   &__button {
@@ -67,8 +66,6 @@
 
   form {
     fieldset {
-      @include indents-reset;
-      border: none;
       margin-bottom: 40px;
 
       &:last-child {
@@ -76,65 +73,46 @@
       }
     }
 
-    input[type="text"],
-    textarea {
-      width: 100%;
-      padding: 12px 16px;
-      box-sizing: border-box;
-      border: none;
-      font: inherit;
-      color: inherit;
-      background-color: $form-input-bg-color;
+    // input[type="checkbox"] + label {
+    //   width: 100%;
+    //   font-size: 14px;
+    //   line-height: 16px;
+    //   color: $form-label-font-color;
 
-      &::placeholder {
-        color: inherit;
-      }
-    }
+    //   &::before,
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     box-sizing: border-box;
+    //   }
 
-    textarea {
-      resize: none;
-    }
+    //   &::before {
+    //     width: 16px;
+    //     height: 16px;
+    //     top: 7px;
+    //     left: 15px;
+    //     border: 1px solid $main-bg-color;
+    //   }
 
-    input[type="checkbox"] + label {
-      width: 100%;
-      font-size: 14px;
-      line-height: 16px;
-      color: $form-label-font-color;
+    //   &::after {
+    //     display: none;
+    //     width: 8px;
+    //     height: 5px;
+    //     top: 13px;
+    //     left: 19px;
+    //     background-position: center center;
+    //     background-repeat: no-repeat;
+    //     background-image: url("../img/bg-icon-check.svg");
+    //   }
+    // }
 
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        box-sizing: border-box;
-      }
-
-      &::before {
-        width: 16px;
-        height: 16px;
-        top: 7px;
-        left: 15px;
-        border: 1px solid $main-bg-color;
-      }
-
-      &::after {
-        display: none;
-        width: 8px;
-        height: 5px;
-        top: 13px;
-        left: 19px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-image: url("../img/bg-icon-check.svg");
-      }
-    }
-
-    input[type="checkbox"] {
-      &:checked + label {
-        &::after {
-          display: block;
-        }
-      }
-    }
+    // input[type="checkbox"] {
+    //   &:checked + label {
+    //     &::after {
+    //       display: block;
+    //     }
+    //   }
+    // }
   }
 }
 
