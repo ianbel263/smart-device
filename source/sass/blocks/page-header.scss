@@ -141,7 +141,15 @@
 
     &__logo {
       margin-right: 0;
-      min-width: 52px;
+
+      img {
+        width: 38px;
+        height: 38px;
+      }
+
+      .logo__wrapper {
+        display: none;
+      }
     }
 
     &__contacts-list {

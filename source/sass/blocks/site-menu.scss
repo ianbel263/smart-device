@@ -2,6 +2,15 @@
   @include ul-reset;
 
   &__list {
-    display: none;
+    @include ul-reset;
+
+    &--closed {
+      display: none;
+    }
+  }
+  &__item {
+    a {
+      color: inherit;
+    }
   }
 }
