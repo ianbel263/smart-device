@@ -23,6 +23,12 @@
     &--bottom {
       justify-content: space-between;
     }
+
+    &--bottom {
+      width: 94%;
+      max-width: 1420px;
+      margin: 0 auto;
+    }
   }
 
   &__top {
@@ -85,9 +91,9 @@
 
   &__bottom {
     // width: 100%;
-    width: 94%;
-    max-width: 1420px;
-    margin: 0 auto;
+    // width: 94%;
+    // max-width: 1420px;
+    // margin: 0 auto;
     padding: 14px 0;
     // display: flex;
 
