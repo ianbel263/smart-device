@@ -2,7 +2,7 @@
   position: fixed;
   top: 136px;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -245px;
 
   display: none;
 
@@ -17,6 +17,8 @@
 
   &--show {
     display: block;
+
+    animation: bounce 0.5s;
   }
 
   &__button-close {
