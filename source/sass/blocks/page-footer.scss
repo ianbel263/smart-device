@@ -276,28 +276,47 @@
 
       display: block;
 
+      &--nojs {
+        display: none;
+      }
+
       &--closed {
         &::after {
           transform: rotate(90deg);
         }
       }
 
-      &--opened {
-        &::after {
-          display: none;
+      // &--opened {
+      //   &::after {
+      //     display: none;
+      //   }
+      }
+    }
+
+    &__main-nav {
+      .site-menu__list {
+        display: none;
+
+        &--nojs {
+          display: block;
+        }
+
+        &--show {
+          display: block;
         }
       }
     }
 
-    // временно
-    &__main-nav {
-      .site-menu__list {
-        display: none;
-      }
-    }
-
-    &__address--closed {
+    &__address {
       display: none;
+
+      &--nojs{
+        display: block;
+      }
+
+      &--show {
+        display: block;
+      }
     }
 
     &__contacts {
