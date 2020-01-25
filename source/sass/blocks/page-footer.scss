@@ -49,10 +49,6 @@
     }
   }
 
-  &__social {
-    width: 100%;
-  }
-
   &__middle {
     width: 70%;
     margin-left: auto;
@@ -306,7 +302,7 @@
     &__address {
       display: none;
 
-      &--nojs{
+      &--nojs {
         display: block;
       }
 

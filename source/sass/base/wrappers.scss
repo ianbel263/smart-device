@@ -1,4 +1,4 @@
-.main-page-wrapper {
+.index-page-wrapper {
   color: $alternate-font-color;
   background-repeat: no-repeat;
   background-color: $alternate-bg-color;
@@ -18,8 +18,15 @@
     center top;
 }
 
+.main-wrapper {
+  background-color: $main-bg-color;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-middle.svg");
+}
+
 @media (max-width: $tablet-width) {
-  .main-page-wrapper {
+  .index-page-wrapper {
     background-size:
       465px 340px,
       705px 380px,
@@ -33,7 +40,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .main-page-wrapper {
+  .index-page-wrapper {
     background-size:
       300px 220px,
       611px 370px,
