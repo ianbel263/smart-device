@@ -141,6 +141,18 @@ if (overlay) {
   overlay.addEventListener('click', closePopupFeedback);
 }
 
+var anchorLinks = document.querySelectorAll('.anchor-link');
+anchorLinks.forEach(function (link) {
+  link.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    var blockId = link.getAttribute('href');
+    document.querySelector(blockId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+});
+
 var phoneInputs = document.querySelectorAll('input[name=phone-number]');
 
 if (phoneInputs) {
