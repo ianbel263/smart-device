@@ -15,6 +15,7 @@
 
   &__container {
     display: flex;
+    box-sizing: border-box;
 
     &--top {
       flex-direction: column;
@@ -285,12 +286,6 @@
           transform: rotate(90deg);
         }
       }
-
-      // &--opened {
-      //   &::after {
-      //     display: none;
-      //   }
-      }
     }
 
     &__main-nav {
@@ -303,6 +298,7 @@
 
         &--show {
           display: block;
+          margin-top: 20px;
         }
       }
     }
@@ -316,6 +312,7 @@
 
       &--show {
         display: block;
+        margin-top: 20px;
       }
     }
 
@@ -328,9 +325,9 @@
         content: "";
         position: absolute;
         top: 0;
-        width: 120%;
+        width: calc(100% + 30px);
         height: 1px;
-        transform: translateX(-10%);
+        transform: translateX(-15px);
         overflow: hidden;
         background-color: $footer-border-color;
       }

@@ -1,5 +1,30 @@
 'use strict';
 
+// var header = document.querySelector('header');
+// var footer = document.querySelector('footer');
+// var sections = document.querySelectorAll('section');
+
+// // header.style.display = 'none';
+// footer.style.display = 'none';
+
+// sections.forEach(function(el) {
+//   el.style.display = 'none';
+// });
+// console.log('sections', sections)
+
+// sections[0].style.display = 'block';
+// sections[1].style.display = 'block';
+// sections[2].style.display = 'block';
+// sections[3].style.display = 'block';
+// sections[4].style.display = 'block';
+// // sections[5].style.display = 'block';
+
+
+
+
+
+
+
 var ESC_KEY_CODE = 27;
 
 var footerToggleMenu = document.querySelector('.page-footer__toggle--menu');
@@ -154,4 +179,3 @@ if (phoneInputs) {
     });
   });
 }
-
