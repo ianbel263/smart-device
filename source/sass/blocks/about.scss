@@ -4,7 +4,7 @@
   max-width: 1170px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 40px;
   padding-bottom: 110px;
 
   &__info {
@@ -33,8 +33,9 @@
 
   &__foundation-year {
     position: absolute;
-    left: -90px;
+    left: -85px;
     top: 110px;
+    width: 320px;
     transform: rotate(-90deg);
 
     svg {
@@ -47,7 +48,6 @@
         line-height: 220px;
       }
     }
-
 
     // p {
     //   @include indents-reset;

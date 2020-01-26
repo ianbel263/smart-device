@@ -1,21 +1,20 @@
 .feedback {
   position: relative;
-  padding-top: 95px;
-  padding-bottom: 110px;
+  padding-top: 90px;
+  padding-bottom: 115px;
   display: flex;
 
   background-repeat: no-repeat;
   background-position: calc(70% + 500px) 0;
   background-image: url("../img/triangles.svg");
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     overflow: hidden;
     width: 665px;
     height: 487px;
-    left: calc((50% - 855px) * 2);
+    left: calc((50% - 862px) * 2);
     background-repeat: no-repeat, no-repeat;
     background-size: auto, contain;
     background-image: url("../img/airplane.png"), url("../img/triangle-double.svg");
@@ -56,6 +55,7 @@
   }
 
   &__fields-item--checkbox {
+    padding-top: 8px;
     padding-left: 40px;
     font-size: 14px;
     line-height: 16px;
@@ -73,13 +73,13 @@
 
     input[type="checkbox"] + label {
       &::before {
-        top: 5px;
-        left: 10px;
+        top: 9px;
+        left: 7px;
       }
 
       &::after {
-        top: 11px;
-        left: 15px;
+        top: 15px;
+        left: 12px;
       }
     }
   }

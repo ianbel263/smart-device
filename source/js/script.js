@@ -10,26 +10,6 @@ if ('NodeList' in window && !NodeList.prototype.forEach) {
   };
 }
 
-// var header = document.querySelector('header');
-// var footer = document.querySelector('footer');
-// var sections = document.querySelectorAll('section');
-
-// // header.style.display = 'none';
-// footer.style.display = 'none';
-
-// sections.forEach(function(el) {
-//   el.style.display = 'none';
-// });
-// console.log('sections', sections)
-
-// sections[0].style.display = 'block';
-// sections[1].style.display = 'block';
-// sections[2].style.display = 'block';
-// sections[3].style.display = 'block';
-// sections[4].style.display = 'block';
-// // sections[5].style.display = 'block';
-
-
 var ESC_KEY_CODE = 27;
 
 var footerToggleMenu = document.querySelector('.page-footer__toggle--menu');
@@ -103,7 +83,6 @@ var buttonCallback = document.querySelector('.page-header__button-callback');
 var overlay = document.querySelector('.overlay');
 var popupFeedback = document.querySelector('.popup-feedback');
 var popupCloseButton = popupFeedback.querySelector('.popup-feedback__button-close');
-// var popupFeedbackSubmitButton = popupFeedback.querySelector('.popup-feedback__button');
 
 var visitorName = popupFeedback.querySelector('[name=name]');
 var visitorPhoneNumber = popupFeedback.querySelector('[name=phone-number]');
@@ -196,4 +175,3 @@ if (phoneInputs) {
     });
   });
 }
-// })();

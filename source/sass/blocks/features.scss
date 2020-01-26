@@ -30,14 +30,12 @@
     max-width: 570px;
     min-height: 299px;
 
-    padding: 40px 35px 65px 45px;
+    padding: 40px 40px 65px 40px;
     box-sizing: border-box;
 
     border: 1px solid $features-border-color;
     border-left: 3px solid $features-title-font-color;
     background-color: $main-bg-color;
-
-    // flex-shrink: 1;
 
     &:hover {
       color: $alternate-font-color;
@@ -66,12 +64,10 @@
 
   p {
     @include indents-reset;
-    font-size: 16px;
-    line-height: 22px;
   }
 
   &__icon {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 
     fill: $features-title-font-color;
   }
