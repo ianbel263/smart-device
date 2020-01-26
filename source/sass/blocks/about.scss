@@ -30,25 +30,34 @@
     }
   }
 
-
   &__foundation-year {
-    // position: absolute;
+    position: absolute;
     left: -85px;
-    top: 110px;
+    top: 90px;
     width: 320px;
-    // transform: rotate(-90deg);
+    transform: rotate(-90deg);
 
-    // svg {
-    //   width: 317px;
-    //   height: 180px;
+    b {
+      display: inline;
+      color: $features-title-font-color;
+      font-family: $alternate-font;
+      font-weight: 700;
+      font-size: 156px;
+      line-height: 220px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-image: url("../img/bg-year.png");
 
-    //   text {
-    //     font-family: $alternate-font;
-    //     font-weight: 700;
-    //     font-size: 156px;
-    //     line-height: 220px;
-    //   }
-    // }
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      -ms-background-clip: text;
+      -ms-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
   }
 }
 
@@ -81,18 +90,14 @@
     }
 
     &__foundation-year {
-      left: -50px;
-      top:120px;
+      left: -60px;
+      top: 85px;
 
-      // svg {
-      //   width: 360px;
-      //   height: 140px;
-
-      //   text {
-      //     font-size: 178px;
-      //     line-height: 251px;
-      //   }
-      // }
+      b {
+        overflow: visible;
+        font-size: 178px;
+        line-height: 251px;
+      }
     }
   }
 }
