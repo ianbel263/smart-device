@@ -30,26 +30,40 @@
     }
   }
 
+
   &__foundation-year {
     position: absolute;
     left: -90px;
-    top: 87px;
+    top: 110px;
+    transform: rotate(-90deg);
 
-    p {
-      @include indents-reset;
-      font-family: $alternate-font;
-      font-weight: 700;
-      font-size: 156px;
-      line-height: 220px;
-      display: flex;
-      transform: rotate(-90deg);
+    svg {
+      width: 100%;
 
-      color: transparent;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("../img/bg-year.png");
-      background-clip: text;
+      text {
+        font-family: $alternate-font;
+        font-weight: 700;
+        font-size: 156px;
+        line-height: 220px;
+      }
     }
+
+
+    // p {
+    //   @include indents-reset;
+    //   font-family: $alternate-font;
+    //   font-weight: 700;
+    //   font-size: 156px;
+    //   line-height: 220px;
+    //   display: flex;
+    //   transform: rotate(-90deg);
+
+    //   color: transparent;
+    //   background-repeat: no-repeat;
+    //   background-position: center center;
+    //   background-image: url("../img/bg-year.png");
+    //   background-clip: text;
+    // }
   }
 }
 
