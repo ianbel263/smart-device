@@ -10,6 +10,21 @@ if ('NodeList' in window && !NodeList.prototype.forEach) {
   };
 }
 
+var foundationYearElement = document.querySelector('.about__foundation-year');
+
+/*
+ * Call the polyfill
+ *
+ * patternID : the unique ID of the SVG pattern
+ * patternURL : the URL to the background-image
+ * class : the css-class applied to the SVG
+ */
+foundationYearElement.backgroundClipPolyfill({
+  'patternID' : 'mypattern',
+  'patternURL' : '/img/bg-year-ie11.png',
+  'class' : 'about__foundation-year'
+});
+
 var ESC_KEY_CODE = 27;
 
 var footerToggleMenu = document.querySelector('.page-footer__toggle--menu');
