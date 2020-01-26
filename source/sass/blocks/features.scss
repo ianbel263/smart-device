@@ -76,7 +76,7 @@
 @media (max-width: $tablet-width) {
   .features {
     padding-top: 54px;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
 
     &__list {
       width: 100%;
@@ -90,10 +90,6 @@
 
     &__icon {
       margin-bottom: 0;
-    }
-
-    h3 {
-      margin-bottom: 5px;
     }
   }
 }
@@ -118,7 +114,7 @@
       width: 100%;
       min-width: 290px;
       max-width: none;
-      padding: 24px 14px 28px 25px;
+      padding: 24px 13px 28px 25px;
 
       &:last-child {
         margin-bottom: 0;

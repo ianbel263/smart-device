@@ -32,37 +32,22 @@
 
 
   &__foundation-year {
-    position: absolute;
+    // position: absolute;
     left: -85px;
     top: 110px;
     width: 320px;
-    transform: rotate(-90deg);
+    // transform: rotate(-90deg);
 
-    svg {
-      width: 100%;
+    // svg {
+    //   width: 317px;
+    //   height: 180px;
 
-      text {
-        font-family: $alternate-font;
-        font-weight: 700;
-        font-size: 156px;
-        line-height: 220px;
-      }
-    }
-
-    // p {
-    //   @include indents-reset;
-    //   font-family: $alternate-font;
-    //   font-weight: 700;
-    //   font-size: 156px;
-    //   line-height: 220px;
-    //   display: flex;
-    //   transform: rotate(-90deg);
-
-    //   color: transparent;
-    //   background-repeat: no-repeat;
-    //   background-position: center center;
-    //   background-image: url("../img/bg-year.png");
-    //   background-clip: text;
+    //   text {
+    //     font-family: $alternate-font;
+    //     font-weight: 700;
+    //     font-size: 156px;
+    //     line-height: 220px;
+    //   }
     // }
   }
 }
@@ -91,20 +76,23 @@
           overflow: hidden;
           text-overflow: ellipsis;
           height: 87px;
-          // margin-bottom: 40px;
         }
       }
     }
 
     &__foundation-year {
-      left: -82px;
-      top: 65px;
+      left: -50px;
+      top:120px;
 
-      p {
-        overflow: visible;
-        font-size: 178px;
-        line-height: 251px;
-      }
+      // svg {
+      //   width: 360px;
+      //   height: 140px;
+
+      //   text {
+      //     font-size: 178px;
+      //     line-height: 251px;
+      //   }
+      // }
     }
   }
 }

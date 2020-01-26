@@ -107,3 +107,13 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .form {
+    form {
+      input[type="text"] {
+        padding: 14px 16px;
+      }
+    }
+  }
+}

@@ -69,11 +69,3 @@
     opacity: 1;
   }
 }
-
-@media (max-width: $tablet-width) {
-  .button {
-    &--blue {
-      padding: 15px 31px;
-    }
-  }
-}
