@@ -91,7 +91,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("jsmin", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/script.js")
     .pipe(jsmin())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
@@ -100,7 +100,7 @@ gulp.task("jsmin", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/design/*", //потом удалить
+    "source/js/polyfill*",
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source//*.ico"
