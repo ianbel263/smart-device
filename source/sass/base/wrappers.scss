@@ -6,11 +6,17 @@
   background-size: cover;
   background-position: center top;
   overflow: hidden;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-header-desktop@2x.png");
+  }
+
 }
 
 .main-wrapper {
   background-color: $main-bg-color;
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url("../img/bg-middle.svg");
 }
@@ -18,11 +24,20 @@
 @media (max-width: $tablet-width) {
   .index-page-wrapper {
     background-image: url("../img/bg-header-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-tablet@2x.png");
+    }
+
   }
 }
 
 @media (max-width: $mobile-width) {
   .index-page-wrapper {
     background-image: url("../img/bg-header-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-mobile@2x.png");
+    }
   }
 }
