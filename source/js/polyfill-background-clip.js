@@ -1,41 +1,13 @@
 /* eslint-disable */
 
-/**
-	 * A SVG polyfill for "-webkit-brackground-clip: text;".
-	 *
-	 * How to use:
-	 *
-	 * 1. Add the polyfill to your page.
-	 *
-	 * 2. Call the polyfill
-	var element = document.querySelector('.myelement');
-	element.backgroundClipPolyfill({
-	'patternID' : 'mypattern',
-	'patternURL' : 'url/to/background/pattern',
-	'class' : 'myelement'
-	});
-
-	*
-	* Variables:
-	*
-	* patternID : the unique ID of the SVG pattern
-	* patternURL : the URL to the background-image
-	* class : the css-class applied to the SVG
-	*
-	*
-	* 2013 by Tim Pietrusky
-	* timpietrusky.com
- */
-'use strict';
-
 Element.prototype.backgroundClipPolyfill = function () {
-  var a = arguments[0];
-  var d = document;
-  var b = d.body;
-  var el = this;
+  var a = arguments[0],
+      d = document,
+      b = d.body,
+      el = this;
 
   function hasBackgroundClip() {
-    return b.style.webkitBackgroundClip !== 'undefined';
+    return b.style.webkitBackgroundClip != undefined;
   }
 
   function addAttributes(el, attributes) {
@@ -49,33 +21,33 @@ Element.prototype.backgroundClipPolyfill = function () {
   }
 
   function createSVG() {
-    var a = arguments[0];
-    var svg = createSvgElement('svg');
-    var pattern = createSvgElement('pattern');
-    var image = createSvgElement('image');
-    var text = createSvgElement('text');
+    var a = arguments[0],
+        svg = createSvgElement('svg'),
+        pattern = createSvgElement('pattern'),
+        image = createSvgElement('image'),
+        text = createSvgElement('text');
 
     // Add attributes to elements
     addAttributes(pattern, {
-      'id': a.id,
-      'patternUnits': 'userSpaceOnUse',
-      'width': a.width,
-      'height': a.height
+      'id' : a.id,
+      'patternUnits' : 'userSpaceOnUse',
+      'width' : a.width,
+      'height' : a.height
     });
 
     addAttributes(image, {
-      'x': -20,
-      'y': 0,
-      'width': a.width,
-      'height': a.height
+      'x' : -20,
+      'y' : 0,
+      'width' : a.width,
+      'height' : a.height
     });
     image.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', a.url);
 
     addAttributes(text, {
-      'x': 0,
-      'y': 135,
-      'class': a.class,
-      'style': 'fill:url(#' + a.id + ');'
+      'x' : 0,
+      'y' : 135,
+      'class' : a.class,
+      'style' : 'fill:url(#' + a.id + ');'
     });
 
     // Set text
@@ -89,26 +61,26 @@ Element.prototype.backgroundClipPolyfill = function () {
     svg.appendChild(text);
 
     return svg;
-  }
+  };
 
   /*
-     * Replace the element if background-clip
-     * is not available.
-     */
+    * Replace the element if background-clip
+    * is not available.
+    */
   if (!hasBackgroundClip()) {
     var img = new Image();
-    img.onload = function () {
+    img.onload = function() {
       var svg = createSVG({
-        'id': a.patternID,
-        'url': a.patternURL,
-        'class': a.class,
-        'width': this.width,
-        'height': this.height,
-        'text': el.textContent
+        'id' : a.patternID,
+        'url' : a.patternURL,
+        'class' : a.class,
+        'width' : this.width,
+        'height' : this.height,
+        'text' : el.textContent
       });
 
       el.parentNode.replaceChild(svg, el);
-    };
+    }
     img.src = a.patternURL;
   }
 };
