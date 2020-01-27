@@ -4,21 +4,31 @@
   padding-bottom: 115px;
   display: flex;
 
-  background-repeat: no-repeat;
-  background-position: calc(70% + 500px) 0;
-  background-image: url("../img/triangles.svg");
+  overflow: hidden;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    overflow: hidden;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  &::before {
     width: 665px;
     height: 487px;
     left: calc((50% - 862px) * 2);
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat;
     background-size: auto, contain;
     background-image: url("../img/airplane.png"), url("../img/triangle-double.svg");
     background-position: 155px 65px, 0 0;
+  }
+
+  &::after {
+    bottom: 0;
+    left: calc(70% + 315px);
+    width: 278px;
+    height: 668px;
+    background-image: url("../img/triangles.svg");
   }
 
   &__wrapper {
@@ -92,6 +102,11 @@
     padding-top: 80px;
     padding-bottom: 105px;
     box-sizing: border-box;
+
+    &::before,
+    &::after {
+      display: none;
+    }
 
     &__wrapper {
       width: 100%;
