@@ -1,21 +1,11 @@
 .index-page-wrapper {
   color: $alternate-font-color;
-  background-repeat: no-repeat;
+
   background-color: $alternate-bg-color;
-  background-image:
-    url("../img/motherboard-desktop@1x.png"),
-    url("../img/triangle-double.svg"),
-    url("../img/bg-header-desktop@1x.png");
-
-  background-size:
-    705px 515px,
-    611px 487px,
-    cover;
-
-  background-position:
-    calc(50% + 430px) calc(387px - 35%),
-    calc(50% + 395px) calc(410px - 35%),
-    center top;
+  background-image: url("../img/bg-header-desktop@1x.png");
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
 }
 
 .main-wrapper {
@@ -27,38 +17,12 @@
 
 @media (max-width: $tablet-width) {
   .index-page-wrapper {
-    background-image:
-      url("../img/motherboard-tablet@1x.png"),
-      url("../img/triangle-double.svg"),
-      url("../img/bg-header-tablet@1x.png");
-
-    background-size:
-      260px 340px,
-      705px 380px,
-      cover;
-
-    background-position:
-      calc(50% + 260px) calc(235px - 35%),
-      calc(50% + 310px) calc(190px - 35%),
-      center top;
+    background-image: url("../img/bg-header-tablet@1x.png");
   }
 }
 
 @media (max-width: $mobile-width) {
   .index-page-wrapper {
-    background-image:
-      url("../img/motherboard-mobile@1x.png"),
-      url("../img/triangle-double.svg"),
-      url("../img/bg-header-mobile@1x.png");
-
-    background-size:
-      294px 220px,
-      611px 370px,
-      cover;
-
-    background-position:
-      calc(50% + 20px) calc(240px - 35%),
-      calc(50% + 240px) calc(165px - 35%),
-      center top;
+    background-image: url("../img/bg-header-mobile@1x.png");
   }
 }
