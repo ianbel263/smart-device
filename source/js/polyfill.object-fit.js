@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 //ES5 version transpiled from code above with BabelJS
 if ('objectFit' in document.documentElement.style === false) {
     document.addEventListener('DOMContentLoaded', function() {
@@ -7,4 +9,3 @@ if ('objectFit' in document.documentElement.style === false) {
       })
     })
   }
-  
