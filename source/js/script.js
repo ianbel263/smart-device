@@ -20,17 +20,10 @@ var foundationYearElement = document.querySelector('.about__foundation-year');
  * class : the css-class applied to the SVG
  */
 foundationYearElement.backgroundClipPolyfill({
-  'patternID' : 'mypattern',
-  'patternURL' : '/img/bg-year-ie11.png',
-  'class' : 'about__foundation-year'
+  'patternID': 'mypattern',
+  'patternURL': '/img/bg-year-ie11.png',
+  'class': 'about__foundation-year'
 });
-
-
-// var logoImg = document.querySelector('.logo img');
-// logoImg.style.width = logoImg.offsetWidth + 'px';
-// logoImg.style.height = logoImg.offsetHeight + 'px';
-// console.log(logoImg.offsetWidth);
-// console.log(logoImg.offsetHeight);
 
 var ESC_KEY_CODE = 27;
 
