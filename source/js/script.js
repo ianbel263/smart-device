@@ -25,6 +25,13 @@ foundationYearElement.backgroundClipPolyfill({
   'class' : 'about__foundation-year'
 });
 
+
+// var logoImg = document.querySelector('.logo img');
+// logoImg.style.width = logoImg.offsetWidth + 'px';
+// logoImg.style.height = logoImg.offsetHeight + 'px';
+// console.log(logoImg.offsetWidth);
+// console.log(logoImg.offsetHeight);
+
 var ESC_KEY_CODE = 27;
 
 var footerToggleMenu = document.querySelector('.page-footer__toggle--menu');

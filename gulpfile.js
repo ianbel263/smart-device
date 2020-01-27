@@ -97,6 +97,11 @@ gulp.task("jsmin", function () {
     .pipe(gulp.dest("build/js"));
 });
 
+gulp.task("polyfill-min", function () {
+  return gulp.src("source/js/polyfill*")
+    .pipe(jsmin())
+    .pipe(gulp.dest("build/js"));
+})
 
 gulp.task("copy", function () {
   return gulp.src([

@@ -100,15 +100,14 @@
       left: -80px;
       top: 65px;
 
+      svg {
+        margin-left: -45px;
+      }
     }
 
     &__foundation-year {
       font-size: 178px;
       line-height: 251px;
-
-      svg {
-        margin-left: -10px;
-      }
     }
   }
 }
