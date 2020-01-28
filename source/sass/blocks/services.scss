@@ -59,7 +59,6 @@
       display: block;
       width: 100%;
       height: 620px;
-      // opacity: 0.2;
     }
 
     &::after {
@@ -75,19 +74,22 @@
       background-image: url("../img/bg-icon-arrow.svg");
     }
 
-    &:hover,
-    &:focus {
-      opacity: 0.7;
+    &:hover {
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    &:active {
-      opacity: 1;
     }
   }
 
   &__link {
     color: inherit;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }
 

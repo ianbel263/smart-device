@@ -24,7 +24,7 @@
       width: 100%;
       padding: 14px 16px;
       box-sizing: border-box;
-      border: none;
+      border: 1px solid transparent;
       font: inherit;
       color: inherit;
       background-color: $form-input-bg-color;
@@ -35,10 +35,12 @@
 
       &:hover {
         opacity: 0.7;
+        cursor: pointer;
       }
 
       &:focus {
         opacity: 1;
+        border: 1px solid $main-bg-color;
       }
     }
 
@@ -65,6 +67,7 @@
       &:hover,
       &:focus {
         opacity: 0.7;
+        cursor: pointer;
       }
 
       &:active {
