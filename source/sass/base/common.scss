@@ -1,12 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
 
   width: 100%;
   min-width: 320px;
-
-  display: flex;
-  flex-direction: column;
 
   font-family: $main-font;
   font-weight: 400;
@@ -16,8 +18,18 @@ body {
   background-color: $main-bg-color;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .content {
-  flex-grow: 1;
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  flex: 0 0 auto;
 }
 
 a {
