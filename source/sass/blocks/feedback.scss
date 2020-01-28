@@ -6,30 +6,10 @@
 
   overflow: hidden;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat, no-repeat;
-  }
-
-  &::before {
-    width: 665px;
-    height: 487px;
-    left: calc((50% - 862px) * 2);
-    background-repeat: no-repeat;
-    background-size: auto, contain;
-    background-image: url("../img/airplane.png"), url("../img/triangle-double.svg");
-    background-position: 155px 65px, 0 0;
-  }
-
-  &::after {
-    bottom: 0;
-    left: calc(70% + 315px);
-    width: 278px;
-    height: 668px;
-    background-image: url("../img/triangles.svg");
-  }
+  background-repeat: no-repeat;
+  background-position: calc((40% - 390px) * 2) 150px, calc((40% - 420px) * 2) 90px, calc(70% + 510px) 10px;
+  background-size: auto, 665px 487px, auto;
+  background-image: url("../img/airplane.png"), url("../img/triangle-double.svg"), url("../img/triangles.svg");
 
   &__wrapper {
     width: 94%;
@@ -64,12 +44,6 @@
 
   &__checkbox {
     width: 270px;
-    box-sizing: border-box;
-    padding-top: 8px;
-    padding-left: 40px;
-    font-size: 14px;
-    line-height: 16px;
-    opacity: 0.8;
   }
 
   form {
@@ -78,6 +52,13 @@
     }
 
     input[type="checkbox"] + label {
+      box-sizing: border-box;
+      padding-top: 8px;
+      padding-left: 40px;
+      font-size: 14px;
+      line-height: 16px;
+      opacity: 0.8;
+
       &::before {
         top: 9px;
         left: 7px;
@@ -98,11 +79,6 @@
     padding-top: 80px;
     padding-bottom: 105px;
     box-sizing: border-box;
-
-    &::before,
-    &::after {
-      display: none;
-    }
 
     &__wrapper {
       width: 100%;
@@ -131,7 +107,7 @@
     }
 
     &__checkbox {
-      padding-left: 45px;
+      padding-left: 30px;
     }
 
     form {
@@ -144,6 +120,8 @@
       }
 
       input[type="checkbox"] + label {
+        padding-top: 13px;
+
         &::before {
           top: 12px;
           left: 13px;
@@ -188,7 +166,7 @@
     }
 
     &__checkbox {
-      padding-left: 35px;
+      padding-left: 0;
     }
 
     form {
@@ -211,6 +189,9 @@
       }
 
       input[type="checkbox"] + label {
+        padding-left: 30px;
+        padding-top: 5px;
+
         &::before {
           top: 5px;
           left: 0;
