@@ -15,7 +15,7 @@ if (footerAddress) {
   footerAddress.classList.remove('page-footer__address--nojs');
 }
 
-if (footerToggleMenu) {
+if (footerToggleMenu && footerMenuList && footerAddress && footerToggleAddress) {
   footerToggleMenu.classList.remove('page-footer__toggle--nojs');
   footerToggleMenu.addEventListener('click', function () {
     footerToggleMenu.classList.toggle('page-footer__toggle--closed');
@@ -27,7 +27,7 @@ if (footerToggleMenu) {
   });
 }
 
-if (footerToggleAddress) {
+if (footerToggleAddress && footerAddress && footerMenuList && footerToggleMenu) {
   footerToggleAddress.classList.remove('page-footer__toggle--nojs');
   footerToggleAddress.addEventListener('click', function () {
     footerToggleAddress.classList.toggle('page-footer__toggle--closed');
@@ -46,6 +46,9 @@ var onEscPress = function (evt) {
 };
 
 var openPopupFeedback = function (evt) {
+  if (!overlay || !popupFeedback) {
+    return;
+  }
   evt.preventDefault();
   overlay.classList.add('overlay--show');
   popupFeedback.classList.add('popup-feedback--show');
@@ -56,19 +59,21 @@ var openPopupFeedback = function (evt) {
     visitorQuestion.value = storageQuestion;
   }
 
-  body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
   document.addEventListener('keydown', onEscPress);
-
 };
 
 var closePopupFeedback = function () {
+  if (!overlay || !popupFeedback) {
+    return;
+  }
+
   overlay.classList.remove('overlay--show');
   popupFeedback.classList.remove('popup-feedback--show');
-  body.removeAttribute('style');
+  document.body.removeAttribute('style');
   document.removeEventListener('keydown', onEscPress);
 };
 
-var body = document.querySelector('body');
 var buttonCallback = document.querySelector('.page-header__button-callback');
 var overlay = document.querySelector('.overlay');
 var popupFeedback = document.querySelector('.popup-feedback');
@@ -116,16 +121,18 @@ if (overlay) {
 }
 
 var anchorLinks = document.querySelectorAll('.anchor-link');
-anchorLinks.forEach(function (link) {
-  link.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    var blockId = link.getAttribute('href');
-    document.querySelector(blockId).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+if (anchorLinks) {
+  anchorLinks.forEach(function (link) {
+    link.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      var blockId = link.getAttribute('href');
+      document.querySelector(blockId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     });
   });
-});
+}
 
 var phoneInputs = document.querySelectorAll('input[name=phone-number]');
 
