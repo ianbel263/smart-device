@@ -85,11 +85,11 @@
       p {
         margin-bottom: 20px;
 
-        &:last-of-type {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          height: 87px;
-        }
+        // &:last-of-type {
+        //   overflow: hidden;
+        //   text-overflow: ellipsis;
+        //   height: 87px;
+        // }
       }
     }
 
@@ -127,10 +127,10 @@
       p {
         margin-bottom: 40px;
 
-        &:last-of-type {
-          height: 180px;
-          margin-bottom: 25px;
-        }
+        // &:last-of-type {
+        //   height: 180px;
+        //   margin-bottom: 25px;
+        // }
       }
     }
 

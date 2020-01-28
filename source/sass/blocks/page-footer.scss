@@ -1,5 +1,4 @@
 .page-footer {
-  padding-top: 65px;
   display: flex;
   flex-direction: column;
   color: $footer-font-color;
@@ -7,6 +6,7 @@
   &__wrapper {
     width: 94%;
     max-width: 1415px;
+    padding-top: 65px;
     margin: 0 auto;
     padding-bottom: 60px;
     display: flex;
@@ -21,7 +21,7 @@
       flex-direction: column;
     }
 
-    &--middle,
+    // &--middle,
     &--bottom {
       justify-content: space-between;
     }
@@ -52,6 +52,10 @@
   &__middle {
     width: 70%;
     margin-left: auto;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
   }
 
   &__main-nav,
@@ -85,7 +89,6 @@
   &__contacts {
     min-width: 340px;
     margin-left: auto;
-    // margin-right: 10px;
 
     address {
       font-style: normal;
@@ -138,7 +141,6 @@
 
 @media (max-width: $tablet-width) {
   .page-footer {
-    padding: 0;
 
     &__wrapper {
       width: 100%;
@@ -157,10 +159,10 @@
         align-items: center;
       }
 
-      &--middle {
-        padding-top: 40px;
-        padding-bottom: 35px;
-      }
+      // &--middle {
+      //   padding-top: 40px;
+      //   padding-bottom: 35px;
+      // }
     }
 
     &__top {
@@ -187,6 +189,10 @@
 
     &__middle {
       width: 100%;
+      padding: 0 25px;
+      padding-top: 40px;
+      padding-bottom: 35px;
+
     }
 
     &__main-nav {
@@ -237,9 +243,9 @@
         flex-direction: column;
       }
 
-      &--middle {
-        flex-direction: column;
-      }
+      // &--middle {
+      //   flex-direction: column;
+      // }
 
       &--bottom {
         flex-direction: column;
@@ -250,6 +256,10 @@
     &__top {
       padding-top: 45px;
       padding-bottom: 55px;
+    }
+
+    &__middle {
+      flex-direction: column;
     }
 
     &__logo,

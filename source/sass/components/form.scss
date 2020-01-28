@@ -34,7 +34,15 @@
   form {
     fieldset {
       @include indents-reset;
+      display: flex;
+      justify-content: space-between;
+
       border: none;
+    }
+
+    label {
+      width: 270px;
+      box-sizing: border-box;
     }
 
     input[type="text"],
@@ -62,6 +70,10 @@
 
     textarea {
       resize: none;
+    }
+
+    input[type="checkbox"] {
+      display: none;
     }
 
     input[type="checkbox"] + label {
