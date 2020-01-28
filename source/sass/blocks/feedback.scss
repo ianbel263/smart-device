@@ -1,20 +1,27 @@
 .feedback {
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 115px;
-  display: flex;
+  background-color: $form-bg-color;
+  padding-top: 94px;
+  padding-bottom: 90px;
 
-  overflow: hidden;
+  &__wrap {
+    width: 94%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: flex;
 
-  background-repeat: no-repeat;
-  background-position: calc((40% - 390px) * 2) 150px, calc((40% - 420px) * 2) 90px, calc(70% + 510px) 10px;
-  background-size: auto, 665px 487px, auto;
-  background-image: url("../img/airplane.png"), url("../img/triangle-double.svg"), url("../img/triangles.svg");
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: calc((40% - 365px) * 2) 65px, calc((40% - 395px) * 2) 0, calc(70% + 510px) 10px;
+    background-size: auto, 665px 485px, auto;
+    background-image: url("../img/airplane.png"), url("../img/triangle-double.svg"), url("../img/triangles.svg");
+  }
 
   &__wrapper {
     width: 94%;
     max-width: 570px;
-    margin-right: 19.5%;
+    margin-right: 17.5%;
     margin-left: auto;
   }
 
@@ -166,6 +173,7 @@
     }
 
     &__checkbox {
+      width: 100%;
       padding-left: 0;
     }
 
