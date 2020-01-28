@@ -24,9 +24,6 @@
 
     &--bottom {
       justify-content: space-between;
-    }
-
-    &--bottom {
       width: 94%;
       max-width: 1415px;
       margin: 0 auto;
@@ -155,7 +152,6 @@
 
 @media (max-width: $tablet-width) {
   .page-footer {
-
     &__wrapper {
       width: 100%;
       padding: 0;
