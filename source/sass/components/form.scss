@@ -40,7 +40,7 @@
 
       &:focus {
         opacity: 1;
-        border: 1px solid $main-bg-color;
+        border: 2px solid $main-bg-color;
       }
     }
 
@@ -86,7 +86,7 @@
         height: 16px;
         top: 7px;
         left: 15px;
-        border: 1px solid $main-bg-color;
+        border: 2px solid $main-bg-color;
       }
 
       &::after {
