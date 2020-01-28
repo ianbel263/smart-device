@@ -8,6 +8,7 @@
     &:hover:not(.logo__link--active),
     &:focus:not(.logo__link--active) {
       opacity: 0.7;
+      cursor: pointer;
     }
 
     &:active {
