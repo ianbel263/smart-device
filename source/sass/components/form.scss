@@ -13,11 +13,12 @@
     @include indents-reset;
   }
 
-  &__fields-list {
-    @include ul-reset;
+  &__container {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__fields-item--checkbox {
+  &__checkbox {
     position: relative;
     padding-left: 50px;
 
@@ -32,23 +33,10 @@
   }
 
   form {
-    fieldset {
-      @include indents-reset;
-      display: flex;
-      justify-content: space-between;
-
-      border: none;
-    }
-
-    label {
-      width: 270px;
-      box-sizing: border-box;
-    }
-
     input[type="text"],
     textarea {
       width: 100%;
-      padding: 12px 16px;
+      padding: 14px 16px;
       box-sizing: border-box;
       border: none;
       font: inherit;
@@ -110,22 +98,8 @@
       }
     }
 
-    input[type="checkbox"] {
-      &:checked + label {
-        &::after {
-          display: block;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .form {
-    form {
-      input[type="text"] {
-        padding: 14px 16px;
-      }
+    input[type="checkbox"]:checked + label::after {
+        display: block;
     }
   }
 }

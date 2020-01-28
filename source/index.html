@@ -163,30 +163,24 @@
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form action="#" method="post">
-            <fieldset>
-              <ul class="feedback__fields-list form__fields-list">
-                <li class="feedback__fields-item form__fields-item">
-                  <input type="text" name="name" placeholder="Имя">
-                </li>
-                <li class="feedback__fields-item form__fields-item">
-                  <input type="text" name="phone-number" placeholder="Телефон" maxlength="16">
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
+            <div class="feedback__container form__container">
+              <label>
+                <input type="text" name="name" placeholder="Имя">
+              </label>
+              <label>
+                <input type="text" name="phone-number" placeholder="Телефон" maxlength="16">
+              </label>
+            </div>
+            <div class="feedback__container form__container">
               <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
-            </fieldset>
-            <fieldset>
-              <ul class="feedback__fields-list form__fields-list">
-                <li class="feedback__fields-item form__fields-item">
-                  <button class="feedback__button button" type="submit">Задать вопрос</button>
-                </li>
-                <li class="feedback__fields-item feedback__fields-item--checkbox form__fields-item form__fields-item--checkbox">
-                  <input type="checkbox" name="agree" id="agree" checked>
-                  <label for="agree">Я согласен на обработку персональных данных</label>
-                </li>
-              </ul>
-            </fieldset>
+            </div>
+            <div class="feedback__container form__container">
+                <button class="feedback__button button" type="submit">Задать вопрос</button>
+              <div class="feedback__checkbox form__checkbox">
+                <input type="checkbox" name="agree" id="agree" checked>
+                <label for="agree">Я согласен на обработку персональных данных</label>
+              </div>
+            </div>
           </form>
         </div>
       </section>
@@ -204,7 +198,7 @@
                 </div>
               </a>
             </div>
-            <div class="page-footer__copyright">
+            <div class="page-footer__company">
               <span>1999-2018 SD Service Devices</span>
             </div>
             <div class="page-footer__social social">
@@ -239,58 +233,54 @@
           </div>
         </div>
         <div class="page-footer__middle">
-          <!-- <div class="page-footer__container page-footer__container--middle"> -->
-            <nav class="page-footer__main-nav site-menu">
-              <h2>Разделы сайта</h2>
-              <button class="page-footer__toggle page-footer__toggle--menu page-footer__toggle--closed page-footer__toggle--nojs toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
-              <ul class="site-menu__list site-menu__list--footer site-menu__list--nojs">
-                <li class="site-menu__item">
-                  <a href="#">О компании</a>
-                </li>
-                <li class="site-menu__item">
-                  <a href="#">Продукты</a>
-                </li>
-                <li class="site-menu__item">
-                  <a href="#">Производство печатных плат</a>
-                </li>
-                <li class="site-menu__item">
-                  <a href="#">Монтаж печатных плат</a>
-                </li>
-                <li class="site-menu__item">
-                  <a href="#">Комплектующие</a>
-                </li>
-                <li class="site-menu__item">
-                  <a href="#">Доставка</a>
-                </li>
-                <li class="site-menu__item">
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="page-footer__contacts">
-              <h2>Наш офис</h2>
-              <button class="page-footer__toggle page-footer__toggle--address page-footer__toggle--closed page-footer__toggle--nojs toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
-              <div class="page-footer__address page-footer__address--nojs address">
-                <address>
-                  <a href="#">г. Мытищи, Олимпийский проспект, д.10</a>
-                  <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-                  <a href="tel:=79250038767">+7 (925) 003-87-67</a>
-                  <a href="tel:+79269268079">+7 (926) 926-80-79</a>
-                </address>
-              </div>
+          <nav class="page-footer__main-nav site-menu">
+            <h2>Разделы сайта</h2>
+            <button class="page-footer__toggle page-footer__toggle--menu page-footer__toggle--closed page-footer__toggle--nojs toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
+            <ul class="site-menu__list site-menu__list--footer site-menu__list--nojs">
+              <li class="site-menu__item">
+                <a href="#">О компании</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="#">Продукты</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="#">Производство печатных плат</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="#">Монтаж печатных плат</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="#">Комплектующие</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="site-menu__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-footer__contacts">
+            <h2>Наш офис</h2>
+            <button class="page-footer__toggle page-footer__toggle--address page-footer__toggle--closed page-footer__toggle--nojs toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
+            <div class="page-footer__address page-footer__address--nojs address">
+              <address>
+                <a href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+                <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                <a href="tel:=79250038767">+7 (925) 003-87-67</a>
+                <a href="tel:+79269268079">+7 (926) 926-80-79</a>
+              </address>
             </div>
-          <!-- </div> -->
+          </div>
         </div>
       </div>
       <div class="page-footer__bottom">
         <div class="page-footer__container page-footer__container--bottom">
-          <div class="page-footer__copyright page-footer__copyright--bottom">
+          <div class="page-footer__copyright">
             <span>Все права защищены</span>
-            <span>1999-2018 SD Service Devices</span>
           </div>
           <a class="page-footer__confidentiality" href="#">Условия конфиденциальности</a>
           <a class="page-footer__developer" href="#">Developed by Wow Studio</a>
-        </div>
         </div>
     </footer>
     <section class="popup-feedback form">
@@ -298,24 +288,22 @@
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form action="#" method="post">
-        <ul class="popup-feedback__fields-list form__fields-list">
-          <li class="popup-feedback__fields-item form__fields-item">
+       <div class="popup-feedback__container">
+          <label>
             <input type="text" name="name" placeholder="Имя">
-          </li>
-          <li class="popup-feedback__fields-item form__fields-item">
+          </label>
+          <label>
             <input type="text" name="phone-number" placeholder="Телефон" maxlength="16">
-          </li>
-          <li class="popup-feedback__fields-item form__fields-item">
+          </label>
+          <label>
             <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
-          </li>
-          <li class="popup-feedback__fields-item form__fields-item">
-            <button class="popup-feedback__button button" type="submit">Отправить</button>
-          </li>
-          <li class="popup-feedback__fields-item popup-feedback__fields-item--checkbox form__fields-item form__fields-item--checkbox">
+          </label>
+          <button class="popup-feedback__button button" type="submit">Отправить</button>
+          <div class="popup-feedback__checkbox form__checkbox">
             <input type="checkbox" name="agree" id="agree-popup" checked>
             <label for="agree-popup">Я согласен на обработку персональных данных</label>
-          </li>
-        </ul>
+          </div>
+       </div>
       </form>
     </section>
     <div class="overlay">

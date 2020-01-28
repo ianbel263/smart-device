@@ -46,19 +46,25 @@
     margin-bottom: 30px;
   }
 
-  &__fields-item {
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &__container {
+    display: flex;
+    flex-direction: column;
   }
 
   &__button {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   form {
+    label {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
     input[type="text"],
     textarea {
       padding: 14px 22px;

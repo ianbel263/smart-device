@@ -50,21 +50,21 @@
     margin-bottom: 52px;
   }
 
-  &__fields-list {
-    display: flex;
-    justify-content: space-between;
-  }
+  &__container {
+    margin-bottom: 40px;
 
-  &__fields-item {
-    width: 270px;
-    box-sizing: border-box;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__button {
-    width: 100%;
+    width: 270px;
   }
 
-  &__fields-item--checkbox {
+  &__checkbox {
+    width: 270px;
+    box-sizing: border-box;
     padding-top: 8px;
     padding-left: 40px;
     font-size: 14px;
@@ -73,12 +73,8 @@
   }
 
   form {
-    fieldset {
-      margin-bottom: 40px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+    label {
+      width: 270px;
     }
 
     input[type="checkbox"] + label {
@@ -125,22 +121,22 @@
       margin-bottom: 50px;
     }
 
-    &__fields-list {
-      align-items: center;
+    &__container {
+      margin-bottom: 43px;
     }
 
-    &__fields-item {
+    &__button,
+    &__checkbox {
       width: 280px;
     }
 
-    &__fields-item--checkbox {
-      padding-top: 5px;
+    &__checkbox {
       padding-left: 45px;
     }
 
     form {
-      fieldset {
-        margin-bottom: 43px;
+      label {
+        width: 280px;
       }
 
       textarea {
@@ -149,12 +145,12 @@
 
       input[type="checkbox"] + label {
         &::before {
-          top: 10px;
+          top: 12px;
           left: 13px;
         }
 
         &::after {
-          top: 14px;
+          top: 17px;
           left: 18px;
         }
       }
@@ -178,26 +174,26 @@
       margin-bottom: 28px;
     }
 
-    &__fields-list {
-      flex-direction: column;
-    }
-
-    &__fields-item {
-      width: 100%;
-
+    &__container {
       margin-bottom: 32px;
-
-      &--checkbox {
-        padding-left: 35px;
-      }
+      flex-direction: column;
 
       &:last-child {
         margin-bottom: 0;
       }
     }
 
+    &__button {
+      margin-bottom: 25px;
+    }
+
+    &__checkbox {
+      padding-left: 35px;
+    }
+
     form {
-      fieldset {
+      label {
+        width: 100%;
         margin-bottom: 32px;
 
         &:last-child {
@@ -216,12 +212,12 @@
 
       input[type="checkbox"] + label {
         &::before {
-          top: 0;
+          top: 5px;
           left: 0;
         }
 
         &::after {
-          top: 4px;
+          top: 10px;
           left: 5px;
         }
       }
