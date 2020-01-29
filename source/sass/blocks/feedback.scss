@@ -3,19 +3,20 @@
   padding-top: 94px;
   padding-bottom: 90px;
 
+  background-repeat: no-repeat;
+  background-position: calc((38% - 396px) * 2.5) 158px, calc((38% - 409px) * 2.5) 92px, calc(70% + 460px) 90px;
+  background-size: auto, 665px 485px, 350px 520px;
+  background-image: url("../img/airplane.png"), url("../img/triangle-double.svg"), url("../img/triangles.svg");
+
   &__wrap {
     width: 94%;
     max-width: 1920px;
     margin: 0 auto;
     padding-bottom: 20px;
+    box-sizing: border-box;
     display: flex;
 
     overflow: hidden;
-
-    background-repeat: no-repeat;
-    background-position: calc((40% - 365px) * 2) 65px, calc((40% - 395px) * 2) 0, calc(70% + 510px) 10px;
-    background-size: auto, 665px 485px, auto;
-    background-image: url("../img/airplane.png"), url("../img/triangle-double.svg"), url("../img/triangles.svg");
   }
 
   &__wrapper {
@@ -81,16 +82,19 @@
 
 @media (max-width: $tablet-width) {
   .feedback {
-    padding-left: 90px;
-    padding-right: 90px;
     padding-top: 80px;
     padding-bottom: 105px;
     box-sizing: border-box;
 
+    &__wrap {
+      width: 77%;
+      padding: 0;
+    }
+
     &__wrapper {
       width: 100%;
-      max-width: 592px;
-      margin: 0 auto;
+      max-width: none;
+      margin: 0;
     }
 
     h2 {
@@ -110,7 +114,8 @@
 
     &__button,
     &__checkbox {
-      width: 280px;
+      width: 47.4%;
+      min-width: 280px;
     }
 
     &__checkbox {
@@ -119,7 +124,13 @@
 
     form {
       label {
-        width: 280px;
+        width: 47.4%;
+        min-width: 280px;
+      }
+
+      input[type="text"],
+      textarea {
+        padding: 14px 16px;
       }
 
       textarea {
@@ -145,10 +156,15 @@
 
 @media (max-width: $mobile-width) {
   .feedback {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 33px;
+    padding-top: 30px;
     padding-bottom: 40px;
+
+    &__wrap {
+      width: 100%;
+      margin: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     h2 {
       font-size: 28px;
@@ -169,6 +185,7 @@
     }
 
     &__button {
+      width: 100%;
       margin-bottom: 25px;
     }
 
@@ -189,7 +206,8 @@
 
       input[type="text"],
       textarea {
-        padding: 14px 16px;
+        width: 100%;
+        padding: 12px 16px;
       }
 
       textarea {
