@@ -48,8 +48,8 @@
 
     &--nojs {
       position: absolute;
-      bottom: -39px;
-      left: 225px;
+      bottom: -40px;
+      left: calc(17% - 10px);
 
       display: block;
     }
@@ -131,8 +131,16 @@
     margin-right: 10%;
     white-space: nowrap;
 
+    span:first-child {
+      margin-right: 15px;
+    }
+
     &--nojs {
       padding-right: 308px;
+
+      span:first-child {
+        margin-right: 0;
+      }
     }
   }
 
@@ -195,6 +203,7 @@
 
     &__company {
       position: static;
+      display: block;
     }
 
     &__logo {
