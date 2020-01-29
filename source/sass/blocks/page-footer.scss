@@ -35,10 +35,6 @@
   }
 
   &__company {
-    position: absolute;
-    bottom: -39px;
-    left: 225px;
-
     padding-top: 5px;
     padding-left: 5px;
 
@@ -47,6 +43,16 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     opacity: 0.5;
+
+    display: none;
+
+    &--nojs {
+      position: absolute;
+      bottom: -40px;
+      left: calc(17% - 10px);
+
+      display: block;
+    }
   }
 
   &__logo {
@@ -118,10 +124,24 @@
   }
 
   &__copyright {
+    width: 32.3%;
+    display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
-    padding-right: 308px;
     margin-right: 10%;
     white-space: nowrap;
+
+    span:first-child {
+      margin-right: 15px;
+    }
+
+    &--nojs {
+      padding-right: 308px;
+
+      span:first-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__confidentiality,
@@ -183,6 +203,7 @@
 
     &__company {
       position: static;
+      display: block;
     }
 
     &__logo {
