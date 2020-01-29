@@ -190,3 +190,25 @@ if (phoneInputs) {
     });
   });
 }
+
+var TABLET_WIDTH = 1024;
+
+var companyElement = document.querySelector('.page-footer__company');
+var companyTextElement = companyElement.querySelector('span');
+var copyrightElement = document.querySelector('.page-footer__copyright');
+var newCompanyTextElement = companyTextElement.cloneNode(true);
+
+companyElement.classList.remove('page-footer__company--nojs');
+copyrightElement.classList.remove('page-footer__copyright--nojs');
+
+var screenWidth = document.body.clientWidth;
+
+if (screenWidth > TABLET_WIDTH) {
+  copyrightElement.appendChild(newCompanyTextElement);
+}
+
+window.addEventListener('resize', function () {
+  if (screenWidth > TABLET_WIDTH) {
+    copyrightElement.appendChild(newCompanyTextElement);
+  }
+});
