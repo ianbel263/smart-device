@@ -12,28 +12,6 @@
     z-index: 5;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: calc(407px - 35%);
-    left: calc(50% + 80px);
-    width: 705px;
-    height: 515px;
-
-    background-image:
-      url("../img/motherboard-desktop@1x.png"),
-      url("../img/triangle-double.svg");
-    background-repeat: no-repeat;
-    background-size: 705px 515px, 90% 95%;
-    background-position: 0 0, 5px 13px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image:
-        url("../img/motherboard-desktop@2x.png"),
-        url("../img/triangle-double.svg");
-    }
-  }
-
   h1 {
     @include indents-reset;
     width: 59%;
@@ -120,25 +98,6 @@
     padding-top: 85px;
     padding-bottom: 180px;
 
-    &::after {
-      top: -22px;
-      left: calc((100% - 591px) + (100% - 591px) * 0.17 + 365px);
-      width: 315px;
-      height: 386px;
-
-      background-image:
-        url("../img/motherboard-tablet@1x.png"),
-        url("../img/triangle-double.svg");
-      background-size: 260px 340px, cover;
-      background-position: 55px 30px, 5px 0;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image:
-          url("../img/motherboard-tablet@2x.png"),
-          url("../img/triangle-double.svg");
-      }
-    }
-
     h1 {
       font-size: 60px;
       line-height: 70px;
@@ -178,25 +137,6 @@
     padding-bottom: 70px;
     display: flex;
     flex-direction: column;
-
-    &::after {
-      top: -19px;
-      left: calc((100% - 320px) + (100% - 320px) * 0.17 + 25px);
-      width: 294px;
-      height: 371px;
-
-      background-image:
-        url("../img/motherboard-mobile@1x.png"),
-        url("../img/triangle-double.svg");
-      background-size: 294px 220px, cover;
-      background-position: 0 25px, 145px 0;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image:
-          url("../img/motherboard-mobile@2x.png"),
-          url("../img/triangle-double.svg");
-      }
-    }
 
     &__container {
       display: flex;
