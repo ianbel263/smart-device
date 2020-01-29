@@ -2,13 +2,22 @@
   color: $alternate-font-color;
 
   background-color: $alternate-bg-color;
-  background-image: url("../img/bg-header-desktop@1x.png");
-  background-size: cover;
-  background-position: center top;
-  overflow: hidden;
+  background-image:
+  url("../img/motherboard-desktop@1x.png"),
+  url("../img/triangle-double.svg"),
+  url("../img/bg-header-desktop@1x.png");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-header-desktop@2x.png");
+background-repeat: no-repeat;
+background-size: 705px 515px, 700px 490px, cover;
+background-position: calc(50% + 430px) calc(425px - 45%), calc(57% + 320px) calc(620px - 90%), center top;
+
+overflow: hidden;
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  background-image:
+    url("../img/motherboard-desktop@2x.png"),
+    url("../img/triangle-double.svg"),
+    url("../img/bg-header-desktop@2x.png");
   }
 }
 
@@ -22,20 +31,39 @@
 
 @media (max-width: $tablet-width) {
   .index-page-wrapper {
-    background-image: url("../img/bg-header-tablet@1x.png");
+    background-image:
+      url("../img/motherboard-tablet@1x.png"),
+      url("../img/triangle-double.svg"),
+      url("../img/bg-header-tablet@1x.png");
+
+    background-size: 260px 340px, 480px 580px, cover;
+    background-position: calc((100% - 391px) + (100% - 391px) * 0.17 + 365px) 110px, calc((100% - 291px) + (100% - 291px) * 0.17 + 465px) -15px, center top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-header-tablet@2x.png");
+      background-image:
+        url("../img/motherboard-tablet@2x.png"),
+        url("../img/triangle-double.svg"),
+        url("../img/bg-header-tablet@2x.png");
     }
   }
 }
 
 @media (max-width: $mobile-width) {
   .index-page-wrapper {
-    background-image: url("../img/bg-header-mobile@1x.png");
+    background-image:
+      url("../img/motherboard-mobile@1x.png"),
+      url("../img/triangle-double.svg"),
+      url("../img/bg-header-mobile@1x.png");
+
+    background-size: 301px 220px, 460px 510px, cover;
+    background-position: calc(50% + 15px) 95px, 170px 0px, center top;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-header-mobile@2x.png");
+      background-image:
+        url("../img/motherboard-mobile@2x.png"),
+        url("../img/triangle-double.svg"),
+        url("../img/bg-header-mobile@2x.png");
     }
   }
 }
