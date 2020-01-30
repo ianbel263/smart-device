@@ -19,6 +19,8 @@ if (foundationYearElement) {
 }
 
 var ESC_KEY_CODE = 27;
+var TABLET_MAX_WIDTH = 1023;
+var PHONE_NUMBER_MIN_LENGTH = 16;
 
 var footerToggleMenu = document.querySelector('.page-footer__toggle--menu');
 var footerToggleAddress = document.querySelector('.page-footer__toggle--address');
@@ -58,7 +60,7 @@ if (footerToggleAddress && footerAddress && footerMenuList && footerToggleMenu) 
 }
 
 var checkPhoneNumberValidity = function (phoneInput) {
-  if (phoneInput.value.length < 15) {
+  if (phoneInput.value.length < PHONE_NUMBER_MIN_LENGTH) {
     phoneInput.setCustomValidity('Пожалуйста, введите номер телефона полностью');
   } else {
     phoneInput.setCustomValidity('');
@@ -168,6 +170,9 @@ if (phoneInputs) {
   phoneInputs.forEach(function (phoneInput) {
 
     checkPhoneNumberValidity(phoneInput);
+    phoneInput.addEventListener('keyup', function () {
+      checkPhoneNumberValidity(phoneInput);
+    });
 
     phoneInput.addEventListener('focus', function () {
       if (phoneInput.value === '+7(' || phoneInput.value === '') {
@@ -179,8 +184,6 @@ if (phoneInputs) {
       if (!(evt.key === 'ArrowLeft' || evt.key === 'ArrowRight' || evt.key === 'Backspace' || evt.key === 'Tab')) {
         evt.preventDefault();
       }
-
-      checkPhoneNumberValidity(phoneInput);
 
       var mask = '+7(111)111-11-11';
 
@@ -206,8 +209,6 @@ if (phoneInputs) {
   });
 }
 
-var TABLET_WIDTH = 1024;
-
 var companyElement = document.querySelector('.page-footer__company');
 var companyTextElement = companyElement.querySelector('span');
 var copyrightElement = document.querySelector('.page-footer__copyright');
@@ -218,12 +219,12 @@ copyrightElement.classList.remove('page-footer__copyright--nojs');
 
 var screenWidth = document.body.clientWidth;
 
-if (screenWidth > TABLET_WIDTH) {
+if (screenWidth > TABLET_MAX_WIDTH) {
   copyrightElement.appendChild(newCompanyTextElement);
 }
 
 window.addEventListener('resize', function () {
-  if (screenWidth > TABLET_WIDTH) {
+  if (screenWidth > TABLET_MAX_WIDTH) {
     copyrightElement.appendChild(newCompanyTextElement);
   }
 });

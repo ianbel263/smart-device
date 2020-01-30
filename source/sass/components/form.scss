@@ -42,6 +42,10 @@
         opacity: 1;
         border: 2px solid $main-bg-color;
       }
+
+      // &:invalid {
+      //   border: 2px solid $form-input-invalid-color;
+      // }
     }
 
     textarea {
@@ -103,6 +107,10 @@
 
     input[type="checkbox"]:checked + label::after {
       display: block;
+    }
+
+    input[type="checkbox"]:invalid + label {
+      color: $form-input-invalid-color;
     }
   }
 }
