@@ -105,12 +105,30 @@
       }
     }
 
-    input[type="checkbox"]:checked + label::after {
-      display: block;
-    }
+    input[type="checkbox"] {
+      &:checked + label {
+        .form__checkbox-on {
+          display: block;
+        }
 
-    input[type="checkbox"]:invalid + label {
-      color: $form-input-invalid-color;
+        .form__checkbox-off {
+          display: none;
+        }
+      }
+
+      &:invalid + label {
+        .form__checkbox-on {
+          display: none;
+        }
+
+        .form__checkbox-off {
+          display: block;
+        }        
+      }
+
+      &:checked + label::after {
+        display: block;
+      }
     }
   }
 }
