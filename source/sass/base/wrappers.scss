@@ -3,21 +3,21 @@
 
   background-color: $alternate-bg-color;
   background-image:
-  url("../img/motherboard-desktop@1x.png"),
-  url("../img/triangle-double.svg"),
-  url("../img/bg-header-desktop@1x.png");
-
-background-repeat: no-repeat;
-background-size: 705px 515px, 700px 490px, cover;
-background-position: calc(50% + 430px) calc(425px - 45%), calc(57% + 313px) calc(620px - 90%), center top;
-
-overflow: hidden;
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  background-image:
-    url("../img/motherboard-desktop@2x.png"),
+    url("../img/motherboard-desktop@1x.png"),
     url("../img/triangle-double.svg"),
-    url("../img/bg-header-desktop@2x.png");
+    url("../img/bg-header-desktop@1x.png");
+
+  background-repeat: no-repeat;
+  background-size: 705px 515px, 700px 490px, cover;
+  background-position: calc(50% + 430px) calc(425px - 45%), calc(57% + 313px) calc(620px - 90%), center top;
+
+  overflow: hidden;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/motherboard-desktop@2x.png"),
+      url("../img/triangle-double.svg"),
+      url("../img/bg-header-desktop@2x.png");
   }
 }
 
@@ -56,7 +56,7 @@ overflow: hidden;
       url("../img/bg-header-mobile@1x.png");
 
     background-size: 301px 220px, 460px 510px, cover;
-    background-position: calc(50% + 15px) 95px, 170px 0px, center top;
+    background-position: calc(50% + 15px) 95px, 170px 0, center top;
 
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
