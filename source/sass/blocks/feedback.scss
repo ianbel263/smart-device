@@ -4,7 +4,7 @@
   padding-bottom: 90px;
 
   background-repeat: no-repeat;
-  background-position: calc(23% * 3 - 620px) 158px, calc(23% * 3 - 695px) 90px, calc(70% + 520px) 90px;
+  background-position: calc(23% * 3 - 40%) 158px, calc(23% * 3 - 47%) 90px, calc(70% + 520px) 90px;
   background-size: auto, 665px 485px, 435px 520px;
   background-image: url("../img/airplane.png"), url("../img/triangle-double.svg"), url("../img/triangles.svg");
 
@@ -77,6 +77,12 @@
         left: 12px;
       }
     }
+  }
+}
+
+@media (max-width: 1920px) {
+  .feedback {
+    background-position: calc(23% * 3 - 620px) 158px, calc(23% * 3 - 695px) 90px, calc(70% + 520px) 90px;
   }
 }
 
