@@ -45,10 +45,10 @@
             </nav>
             <ul class="page-header__contacts-list">
               <li class="page-header__contacts-item page-header__contacts-item--mail">
-                <a href="mailto:info@sd.ru" class="page-header__contacts-link page-header__contacts-link--mail"><span>info@sd.ru</span></a>
+                <a href="mailto:info@sd.ru" class="page-header__contacts-link page-header__contacts-link--mail" aria-label="Написать нам"><span>info@sd.ru</span></a>
               </li>
               <li class="page-header__contacts-item page-header__contacts-item--phone">
-                <a href="tel:+74950005252" class="page-header__contacts-link page-header__contacts-link--phone"><span>+7 (495) 000 52 52</span></a>
+                <a href="tel:+74950005252" class="page-header__contacts-link page-header__contacts-link--phone" aria-label="Позвонить нам"><span>+7 (495) 000 52 52</span></a>
               </li>
             </ul>
             <button class="page-header__button-callback button button--transparent" type="button">Заказать звонок</button>
@@ -58,8 +58,8 @@
               <h1>Печатные платы</h1>
               <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
               <a class="banner__link banner__link--consult anchor-link button button--blue" href="#feedback">
-                <span class="banner__link-text banner__link-text--desktop">Получить бесплатную консультацию</span>
-                <span class="banner__link-text banner__link-text--mobile">Бесплатная консультация</span>
+                <span class="banner__link-text banner__link-text--desktop" aria-label="Получить бесплатную консультацию">Получить бесплатную консультацию</span>
+                <span class="banner__link-text banner__link-text--mobile" aria-label="Получить бесплатную консультацию">Бесплатная консультация</span>
               </a>
             </div>
             <div class="banner__link-wrapper">
@@ -171,15 +171,15 @@
                 <p>Мы проконсультируем Вас бесплатно</p>
                 <form action="#" method="post">
                   <div class="feedback__container form__container">
-                    <label>
+                    <label aria-label="Ваше имя">
                       <input type="text" name="name" placeholder="Имя" required="">
                     </label>
-                    <label>
+                    <label aria-label="Ващ телефон">
                       <input type="text" name="phone-number" placeholder="Телефон" maxlength="16" required="">
                     </label>
                   </div>
                   <div class="feedback__container form__container">
-                    <textarea name="question" rows="6" placeholder="Ваш вопрос" required=""></textarea>
+                    <textarea name="question" rows="6" placeholder="Ваш вопрос" required="" aria-label="Ваш вопрос"></textarea>
                   </div>
                   <div class="feedback__container form__container">
                       <button class="feedback__button button" type="submit">Задать вопрос</button>
@@ -299,13 +299,13 @@
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form action="#" method="post">
           <div class="popup-feedback__container">
-            <label>
+            <label aria-label="Ваше имя">
               <input type="text" name="name" placeholder="Имя" required="">
             </label>
-            <label>
+            <label aria-label="Ваш телефон">
               <input type="text" name="phone-number" placeholder="Телефон" maxlength="16" required="">
             </label>
-            <label>
+            <label aria-label="Ваш вопрос">
               <textarea name="question" rows="6" placeholder="Ваш вопрос" required=""></textarea>
             </label>
             <button class="popup-feedback__button button" type="submit">Отправить</button>
