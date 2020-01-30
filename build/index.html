@@ -172,19 +172,19 @@
                 <form action="#" method="post">
                   <div class="feedback__container form__container">
                     <label>
-                      <input type="text" name="name" placeholder="Имя">
+                      <input type="text" name="name" placeholder="Имя" required="">
                     </label>
                     <label>
-                      <input type="text" name="phone-number" placeholder="Телефон" maxlength="16">
+                      <input type="text" name="phone-number" placeholder="Телефон" maxlength="16" required="">
                     </label>
                   </div>
                   <div class="feedback__container form__container">
-                    <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
+                    <textarea name="question" rows="6" placeholder="Ваш вопрос" required=""></textarea>
                   </div>
                   <div class="feedback__container form__container">
                       <button class="feedback__button button" type="submit">Задать вопрос</button>
                     <div class="feedback__checkbox form__checkbox">
-                      <input type="checkbox" name="agree" id="agree" checked="">
+                      <input type="checkbox" name="agree" id="agree" checked="" required="">
                       <label for="agree">Я согласен на обработку персональных данных</label>
                     </div>
                   </div>
@@ -300,17 +300,17 @@
         <form action="#" method="post">
           <div class="popup-feedback__container">
             <label>
-              <input type="text" name="name" placeholder="Имя">
+              <input type="text" name="name" placeholder="Имя" required="">
             </label>
             <label>
-              <input type="text" name="phone-number" placeholder="Телефон" maxlength="16">
+              <input type="text" name="phone-number" placeholder="Телефон" maxlength="16" required="">
             </label>
             <label>
-              <textarea name="question" rows="6" placeholder="Ваш вопрос"></textarea>
+              <textarea name="question" rows="6" placeholder="Ваш вопрос" required=""></textarea>
             </label>
             <button class="popup-feedback__button button" type="submit">Отправить</button>
             <div class="popup-feedback__checkbox form__checkbox">
-              <input type="checkbox" name="agree" id="agree-popup" checked="">
+              <input type="checkbox" name="agree" id="agree-popup" checked="" required="">
               <label for="agree-popup">Я согласен на обработку персональных данных</label>
             </div>
           </div>
