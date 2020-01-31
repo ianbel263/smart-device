@@ -42,18 +42,10 @@
         opacity: 1;
         border: 2px solid $main-bg-color;
       }
-
-      // &:invalid {
-      //   border: 2px solid $form-input-invalid-color;
-      // }
     }
 
     textarea {
       resize: none;
-    }
-
-    input[type="checkbox"] {
-      display: none;
     }
 
     input[type="checkbox"] + label {
@@ -106,6 +98,8 @@
     }
 
     input[type="checkbox"] {
+      display: none;
+
       &:checked + label {
         .form__checkbox-on {
           display: block;
@@ -123,7 +117,7 @@
 
         .form__checkbox-off {
           display: block;
-        }        
+        }
       }
 
       &:checked + label::after {
