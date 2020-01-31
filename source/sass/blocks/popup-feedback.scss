@@ -7,7 +7,7 @@
   display: none;
 
   width: 25.5%;
-  padding: 1.56% 2% 1.77%;
+  padding: 1.56% 2.1% 1.77%;
   box-sizing: border-box;
 
   color: $alternate-font-color;
@@ -38,12 +38,12 @@
     font-size: 28px;
     line-height: 140.6%;
 
-    margin-bottom: 13px;
+    margin-bottom: 3%;
   }
 
   p {
     width: 90%;
-    margin-bottom: 30px;
+    margin-bottom: 7.4%;
   }
 
   &__container {
@@ -53,12 +53,12 @@
 
   &__button {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 7.4%;
   }
 
   form {
     label {
-      margin-bottom: 30px;
+      margin-bottom: 7.4%;
 
       &:last-child {
         margin-bottom: 0;
