@@ -164,6 +164,33 @@ if (anchorLinks) {
   });
 }
 
+var createPhoneNumberMask = function (evt, phoneInput) {
+  if (!(evt.key === 'ArrowLeft' || evt.key === 'ArrowRight' || evt.key === 'Backspace' || evt.key === 'Tab')) {
+    evt.preventDefault();
+  }
+
+  var mask = '+7(111)111-11-11';
+
+  if (/[0-9\+\ \-\(\)]/.test(evt.key)) {
+    var currentString = phoneInput.value;
+    var currentLength = currentString.length;
+
+    if (/[0-9]/.test(evt.key)) {
+      if (mask[currentLength] === '1') {
+        phoneInput.value = currentString + evt.key;
+      } else {
+        for (var i = currentLength; i < mask.length; i++) {
+          if (mask[i] === '1') {
+            phoneInput.value = currentString + evt.key;
+            break;
+          }
+          currentString += mask[i];
+        }
+      }
+    }
+  }
+};
+
 var phoneInputs = document.querySelectorAll('input[name=phone-number]');
 
 if (phoneInputs) {
@@ -181,30 +208,7 @@ if (phoneInputs) {
     });
 
     phoneInput.addEventListener('keydown', function (evt) {
-      if (!(evt.key === 'ArrowLeft' || evt.key === 'ArrowRight' || evt.key === 'Backspace' || evt.key === 'Tab')) {
-        evt.preventDefault();
-      }
-
-      var mask = '+7(111)111-11-11';
-
-      if (/[0-9\+\ \-\(\)]/.test(evt.key)) {
-        var currentString = phoneInput.value;
-        var currentLength = currentString.length;
-
-        if (/[0-9]/.test(evt.key)) {
-          if (mask[currentLength] === '1') {
-            phoneInput.value = currentString + evt.key;
-          } else {
-            for (var i = currentLength; i < mask.length; i++) {
-              if (mask[i] === '1') {
-                phoneInput.value = currentString + evt.key;
-                break;
-              }
-              currentString += mask[i];
-            }
-          }
-        }
-      }
+      createPhoneNumberMask(evt, phoneInput);
     });
   });
 }
@@ -214,17 +218,20 @@ var companyTextElement = companyElement.querySelector('span');
 var copyrightElement = document.querySelector('.page-footer__copyright');
 var newCompanyTextElement = companyTextElement.cloneNode(true);
 
-companyElement.classList.remove('page-footer__company--nojs');
-copyrightElement.classList.remove('page-footer__copyright--nojs');
+if (companyElement) {
+  companyElement.classList.remove('page-footer__company--nojs');
+}
 
-var screenWidth = document.body.clientWidth;
+if (copyrightElement) {
+  copyrightElement.classList.remove('page-footer__copyright--nojs');
+}
 
-if (screenWidth > TABLET_MAX_WIDTH) {
+if (document.body.clientWidth > TABLET_MAX_WIDTH) {
   copyrightElement.appendChild(newCompanyTextElement);
 }
 
 window.addEventListener('resize', function () {
-  if (screenWidth > TABLET_MAX_WIDTH) {
+  if (document.body.clientWidth > TABLET_MAX_WIDTH) {
     copyrightElement.appendChild(newCompanyTextElement);
   }
 });
