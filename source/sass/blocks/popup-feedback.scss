@@ -88,8 +88,9 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
   .popup-feedback {
-    width: 63%;
+    width: 262px;
+    margin-left: -131px;
   }
 }
