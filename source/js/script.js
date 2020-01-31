@@ -80,6 +80,7 @@ var openPopupFeedback = function (evt) {
   evt.preventDefault();
   visitorPhoneNumber.value = '';
   checkPhoneNumberValidity(visitorPhoneNumber);
+  calculatePopupPosition();
   overlay.classList.add('overlay--show');
   popupFeedback.classList.add('popup-feedback--show');
   visitorName.focus();
@@ -89,7 +90,7 @@ var openPopupFeedback = function (evt) {
     visitorQuestion.value = storageQuestion;
   }
 
-  // document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
   document.addEventListener('keydown', onEscPress);
 };
 
@@ -102,6 +103,11 @@ var closePopupFeedback = function () {
   popupFeedback.classList.remove('popup-feedback--show');
   document.body.removeAttribute('style');
   document.removeEventListener('keydown', onEscPress);
+};
+
+var calculatePopupPosition = function () {
+  var coordY = (document.body.clientWidth * 0.07);
+  popupFeedback.style.top = coordY + 'px';
 };
 
 var buttonCallback = document.querySelector('.page-header__button-callback');
@@ -232,6 +238,7 @@ if (document.body.clientWidth > TABLET_MAX_WIDTH) {
 
 window.addEventListener('resize', function () {
   if (document.body.clientWidth > TABLET_MAX_WIDTH) {
+    calculatePopupPosition();
     copyrightElement.appendChild(newCompanyTextElement);
   }
 });
