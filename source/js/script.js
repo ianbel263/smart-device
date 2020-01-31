@@ -216,7 +216,7 @@ if (phoneInputs) {
 var companyElement = document.querySelector('.page-footer__company');
 var companyTextElement = companyElement.querySelector('span');
 var copyrightElement = document.querySelector('.page-footer__copyright');
-// var newCompanyTextElement = companyTextElement.cloneNode(true);
+var newCompanyTextElement = companyTextElement.cloneNode(true);
 
 if (companyElement) {
   companyElement.classList.remove('page-footer__company--nojs');
@@ -226,15 +226,12 @@ if (copyrightElement) {
   copyrightElement.classList.remove('page-footer__copyright--nojs');
 }
 
-var replaceElement = function (parent, element) {
-  var newElement = element.cloneNode(true);
-  parent.appendChild(newElement);
-};
-
-// replaceElement(copyrightElement, companyTextElement);
+if (document.body.clientWidth > TABLET_MAX_WIDTH) {
+  copyrightElement.appendChild(newCompanyTextElement);
+}
 
 window.addEventListener('resize', function () {
   if (document.body.clientWidth > TABLET_MAX_WIDTH) {
-    replaceElement(copyrightElement, companyTextElement);
+    copyrightElement.appendChild(newCompanyTextElement);
   }
 });
