@@ -341,6 +341,7 @@
       position: relative;
       margin-left: 0;
       margin-right: 0;
+      overflow: hidden;
 
       &::before {
         content: "";
@@ -349,7 +350,6 @@
         width: calc(100% + 30px);
         height: 1px;
         transform: translateX(-15px);
-        overflow: hidden;
         background-color: $footer-border-color;
       }
     }

@@ -41,7 +41,7 @@
 
   &__item {
     position: relative;
-    width: calc((100% - 60px) / 3);
+    width: calc((99.9% - 60px) / 3);
 
     h3 {
       @include indents-reset;
