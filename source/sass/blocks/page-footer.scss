@@ -283,6 +283,7 @@
     &__middle {
       flex-direction: column;
       padding: 0 15px;
+      overflow: hidden;
     }
 
     &__bottom {
@@ -341,7 +342,6 @@
       position: relative;
       margin-left: 0;
       margin-right: 0;
-      overflow: hidden;
 
       &::before {
         content: "";
